@@ -1,4 +1,4 @@
-import NavMain from './nav-main';
+import NavMain from './navmain';
 import Search from './search';
 
 export default function Header() {

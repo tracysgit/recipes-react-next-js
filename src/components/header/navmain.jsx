@@ -10,11 +10,13 @@ export default function NavMain() {
     <nav className="main-nav" aria-label="Main Menu">
       <ul className={`flex flex-row flex-wrap justify-start my-3`}>
         <li><Navlink href="/">Home</Navlink></li>
+        
         {categories.map((category) => {
-          const categoryCapital = capitalizeFirstLetter(category)
+          const categoryCapital = capitalizeFirstLetter(category);
+
           return (
             <>
-              <li><Navlink href={`/category/${category}`}>{categoryCapital}</Navlink></li>
+              <li key={category}><Navlink href={`/category/${category}`}>{categoryCapital}</Navlink></li>
             </>
           );
         })}

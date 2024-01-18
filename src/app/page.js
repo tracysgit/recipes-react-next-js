@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
+import H1Headline from '@/components/headlines/h1Headline';
+import { CardImageTop } from '@/components/cards/cardImageTop';
 import { getCategories, getRecipes } from '@/lib/recipes';
 import { capitalizeFirstLetter } from '@/lib/utils';
 
@@ -13,7 +15,7 @@ export default function Home() {
 
   return (
     <>
-      <h1 className="mb-8 text-3xl leading-none text-gray-900 dark:text-white lg:text-4xl">All Recipes</h1>
+      <H1Headline>All Recipes</H1Headline>
       {categories.map((category) => {
         return (
           <>
@@ -31,7 +33,7 @@ export default function Home() {
                 </Link>
               </h2>
               <ul className="deck--grid-card-image-upper mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                {/* {recipes
+                {recipes
                   .filter((recipe) =>
                     recipe.category
                       .toLowerCase()
@@ -39,16 +41,14 @@ export default function Home() {
                   )
                   .map((recipe, index) => {
                     return (
-                      <>
-                        {recipe}
-                        <CardImageTop
-                          key={recipe.id}
-                          card={recipe}
-                          className=""
-                        ></CardImageTop>
-                      </>
+                      <CardImageTop
+                        key={index}
+                        card={recipe}
+                        className=""
+                      >                      
+                      </CardImageTop>
                     );
-                  })} */}
+                  })}
               </ul>
             </section>
           </>

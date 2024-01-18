@@ -1,6 +1,9 @@
 import clsx from 'clsx';
 import Link from 'next/link';
 import Image from 'next/image';
+import { slugifyString } from '@/lib/utils';
+
+// import testImage from './../../../public/images/appetizers_pesto.webp';
 
 export function CardImageTop({
   card,
@@ -12,23 +15,20 @@ export function CardImageTop({
     <li
       {...rest}
       className={clsx(
-        'deck__card h-auto max-w-full overflow-hidden rounded-lg border border-gray-300 bg-white shadow hover:border-gray-400 dark:border-gray-700 dark:bg-gray-800',
+        'deck__card h-auto max-w-full overflow-hidden rounded-lg border border-gray-300 bg-white shadow hover:shadow-xl hover:border-gray-400 dark:border-gray-700 dark:bg-gray-800',
         className,
       )}
     >
-      <Link href={`/recipes/${card.id}`}>
+      <Link href={`/recipes/${slugifyString(card.name)}`}>
         <Image
-          src={
-            '/images/' +
-            (card.image ? card.image : 'image_placeholder') +
-            '.webp'
-          }
+          src={`/images/${card.image ? card.image : 'image_placeholder'}.webp`}
           width={400}
-          height={250}
+          height={150}
           className="card__image w-full"
           alt={card.image ? 'Image of ' + card.name : ''}
           style={{
             objectFit: 'cover',
+            // width: '100%',
             height: '150px',
           }}
         />

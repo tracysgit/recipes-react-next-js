@@ -7,7 +7,7 @@ import classes from './navlink.module.css';
 
 export default function Navlink({ href, as, children }) {
   const path = usePathname();
-  const baseClasses = `mx-1 px-2 py-2 hover:underline ${classes.navlink}`;
+  const baseClasses = `mx-1 px-2 py-2 rounded-md hover:underline ${classes.navlink}`;
   
   let isActiveLink = false;
   if (path === '/' && path === href) {
