@@ -1,0 +1,7 @@
+.navlink {
+  border: 1px solid transparent;
+}
+
+.navlink.active {
+  border: 1px solid white;
+}

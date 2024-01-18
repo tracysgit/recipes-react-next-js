@@ -1,18 +1,18 @@
 {
   "categories": [
-    "entrees",
-    "appetizers",
-    "soups",
-    "salads",
-    "sides",
-    "desserts",
-    "drinks"
+    "entree",
+    "appetizer",
+    "soup",
+    "salad",
+    "side",
+    "dessert",
+    "drink"
   ],
   "recipes": [
     {
       "id": 11,
       "name": "Crepes",
-      "category": "entrees",
+      "category": "entree",
       "tags": [
         "breakfast",
         "dessert"
@@ -32,7 +32,7 @@
     {
       "id": 10,
       "name": "Oatmeal Carmelitas",
-      "category": "desserts",
+      "category": "dessert",
       "tags": [
         "dessert",
         "oatmeal",
@@ -53,13 +53,13 @@
       ],
       "directions": "<p>Heat oven to 350&#8457;F. Grease 13&quot;x9&quot; pan. Lightly spoon flour into measuring cup; level off. In large bowl, combine all crust ingredients; mix at low speed until crumbly. Reserve half of crumb mixture (about 3 cups) for topping. Press remaining crumb mixture in bottom of greased pan. Bake at 350&#8457;F. for 10 minutes.</p><p>Meanwhile, in small bowl, combine caramel topping and 3 tablespoons flour; blend well. Remove partially baked crust from oven; sprinkle with chocolate chips and nuts. Drizzle evenly with caramel mixture; sprinkle with reserved crumb mixture. Return to oven; bake an additional 18 to 22 minutes or until golden brown. Cool 1 hour or until completely cooled. Refrigerate 1 to 2 hours or until filling is set. Cut into bars.</p>",
       "source": "https://www.pillsbury.com/recipes/oatmeal-carmelitas",
-      "image": "desserts_oatmeal-carmelitas",
+      "image": "dessert_oatmeal-carmelitas",
       "servings": "13&quot; x 9&quot; tray of bars"
     },
     {
       "id": 9,
       "name": "Sables",
-      "category": "desserts",
+      "category": "dessert",
       "tags": [
         "cookie",
         "punition",
@@ -74,13 +74,13 @@
       ],
       "directions": "<p>Cream the butter and sugar until thoroughly blended. Add the egg and stir until the mixture is smooth and satiny. Add the flour all at once and mix until the dough forms clumps and curds and looks like coarse meal. Form the dough into discs. Cover and refrigerate until firm.</p><p>Roll out the dough to 1/8&quot; thickness. Cut the cookies with a fluted, 4cm circular cookie cutter.</p><p>Bake at 350&#8457; for approximately 8-12 minutes or the preferred level of brownness.",
       "source": "Poil&acirc;ne Bakery",
-      "image": "desserts_sable-cookies",
+      "image": "dessert_sable-cookies",
       "servings": "60 cookies"
     },
     {
       "id": 8,
       "name": "Anise Cookies",
-      "category": "desserts",
+      "category": "dessert",
       "tags": [
         "cookie",
         "anise",
@@ -99,13 +99,13 @@
       ],
       "directions": "<p>Preheat oven to 350&#8457;.</p><p>Combine dry ingredients. Combine remaining ingredients in a separate bowl. Combine all ingredients and mix.</p><p>Divide dough into two balls and refrigerate. Roll out dough to 1/8 in. thick. Bake at 350&#8457; for approximately 5 minutes.</p>",
       "source": "Grandma Krebs",
-      "image": "desserts_anise-cookies",
+      "image": "dessert_anise-cookies",
       "servings": "50 cookies"
     },
     {
       "id": 7,
       "name": "Banana Bread",
-      "category": "desserts",
+      "category": "dessert",
       "tags": [
         "quick bread",
         "banana",
@@ -122,13 +122,13 @@
         "1 t. vanilla"
       ],
       "directions": "<p>Preheat oven to 350&#8457;.</p><p>Mash bananas, and mix other wet ingredients. In a separate bowl, mix dry ingredients. Combine. Add batter to greased bread tin.</p><p>Cook for 1 hour.</p>",
-      "image": "desserts_banana-bread",
+      "image": "dessert_banana-bread",
       "servings": "1 loaf"
     },
     {
       "id": 6,
       "name": "Orange Julius",
-      "category": "drinks",
+      "category": "drink",
       "tags": [
         "smoothie",
         "orange"
@@ -141,13 +141,13 @@
         "1-1/2 c. ice"
       ],
       "directions": "<p>Blend the milk and vanilla in a blender. Add the frozen orange juice concentrate. Blend until fully combined with the milk. Add the sugar and ice cubes, and blend until cubes are crushed and mixture has thickened. If things end up a little thick, just add a tablespoon of water and mix once again.</p>",
-      "image": "drinks_orange-julius",
+      "image": "drink_orange-julius",
       "servings": "2"
     },
     {
       "id": 5,
       "name": "Chocolate Chip Cookies",
-      "category": "desserts",
+      "category": "dessert",
       "tags": [
         "chocolate",
         "sweet"
@@ -167,12 +167,12 @@
       ],
       "directions": "<p>Preheat oven to 375&#8457;.</p><p>Cream butter and sugars with spoon or mixer. Add egg and vanilla, and beat well. Stir in flour, baking powder, soda, and salt. Stir in rolled oats and chocolate chips.</p><p>Form dough into balls. Place on ungreased cookie sheet. Bake at 375&#8457; for 10-12 minutes.</p>",
       "servings": "36 cookies",
-      "image": "desserts_chocolate-chip-cookies"
+      "image": "dessert_chocolate-chip-cookies"
     },
     {
       "id": 4,
       "name": "Cream of Tomato Soup",
-      "category": "soups",
+      "category": "soup",
       "tags": [
         "tomato"
       ],
@@ -191,12 +191,12 @@
       ],
       "directions": "<p>Melt the butter in a large soup pot. Add the onions, carrots, and garlic. Cook over medium heat until the vegetables have wilted (approx. 10 minutes).</p><p>Add the tomatoes and their juice, basil, sugar and salt and pepper. Cook for 5 minutes. Then add the stock and allspice, and slowly bring to a boil. Reduce the heat, partially cover, and simmer for 50 minutes.</p><p>Pure&etilda; the soup in batches in a blender or food processor.Return it to the pot, add the cream, and adjust the seasoning, and heat through.</p>",
       "servings": "8-10 portions",
-      "image": "soups_cream-of-tomato"
+      "image": "soup_cream-of-tomato"
     },
     {
       "id": 3,
       "name": "Pesto",
-      "category": "appetizers",
+      "category": "appetizer",
       "tags": [
         "spread",
         "basil",
@@ -211,13 +211,13 @@
         "2 T. olive oil"
       ],
       "directions": "<p>Chop basil leaves, pine nuts, garlic, and salt in a food processor. Add cheese and olive oil and mix by hand. Add additional salt and olive oil as needed.</p>",
-      "image": "appetizers_pesto",
+      "image": "appetizer_pesto",
       "servings": "1/2 cup"
     },
     {
       "id": 2,
       "name": "Popovers",
-      "category": "sides",
+      "category": "side",
       "tags": [
         "bread"
       ],
@@ -230,13 +230,13 @@
         "1 c. all-purpose flour"
       ],
       "directions": "<p>Heat the oven to 425&#8457;F. Oil each well of a 12-well muffin pan; set aside.</p><p>Stir together the butter, eggs, milk, sugar, and salt until smooth. Add the flour and blend until just smooth. Let the mixture rest for a few minutes.</p><p>Place the prepared muffin pan in the oven on the heated baking sheet and bake until the oil sizzles, about 2 to 3 minutes. Remove the muffin pan and fill the wells of the muffin pan halfway up with batter. Return the muffin pan and baking sheet to the oven. </p><p>Bake until the popovers are puffed and the tops are starting to brown, about 20 minutes. (Do not open the oven door while the popovers cook.) Reduce the oven temperature to 350&#8457;F and bake until the popovers are golden brown all over, about 15 minutes more. Remove the popovers from the pan and serve immediately.</p>",
-      "image": "sides_popovers",
+      "image": "side_popovers",
       "servings": "6 popovers"
     },
     {
       "id": 1,
       "name": "Salad With Balsamic-Glazed Prosciutto",
-      "category": "salads",
+      "category": "salad",
       "tags": [
         "greens"
       ],
@@ -255,7 +255,7 @@
       "directions": "<p>In a large bowl, whisk 1 tablespoon each of both vinegars with the mustard. Whisk in 2 tablespoons of the olive oil and season with salt and pepper. Add the greens and chopped eggs but don't toss.</p><p>In a large skillet, melt 2 tablespoons of the butter in the remaining 2 tablespoons of oil. Cook over moderately high heat until the butter begins to brown, about 1 minute. Add the prosciutto and cook, stirring occasionally, until crisp, 2 to 3 minutes. Add the remaining 1/4 cup of balsamic vinegar and 2 tablespoons of red wine vinegar and cook until slightly reduced, about 2 minutes. Remove from the heat. Swirl in the remaining 3 tablespoons of butter until melted.</p><p>Toss the greens, season with salt and pepper and transfer to plates. Spoon the hot dressing over the greens and serve.</p>",
       "servings": "6",
       "source": "<a href=\"http://www.foodandwine.com/recipes/salad-of-bitter-greens-with-balsamic-glazed-prosciutto\">http://www.foodandwine.com/recipes/salad-of-bitter-greens-with-balsamic-glazed-prosciutto</a>",
-      "image": "salads_balsamic-glazed-prosciutto"
+      "image": "salad_balsamic-glazed-prosciutto"
     }
   ]
 }

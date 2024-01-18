@@ -2,6 +2,7 @@
 
 ## To Do
 
+- Try reading and responding to query parameters
 - Accessible nav (aria-current="page") with hamburger
 - Search bar
 - Footer w/ JS date

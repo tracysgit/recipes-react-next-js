@@ -1,16 +1,59 @@
+import Link from 'next/link';
 import Image from 'next/image';
+import { getCategories, getRecipes } from '@/lib/recipes';
+import { capitalizeFirstLetter } from '@/lib/utils';
 
 export const metadata = {
   title: 'Home | Recipes',
 };
 
 export default function Home() {
+  const categories = getCategories();
+  const recipes = getRecipes();
+
   return (
     <>
-    <h1 className="mb-8 text-3xl leading-none text-gray-900 dark:text-white lg:text-4xl">
-        All Recipes
-      </h1>
-    <p>Show all recipes organized by category</p>
+      <h1 className="mb-8 text-3xl leading-none text-gray-900 dark:text-white lg:text-4xl">All Recipes</h1>
+      {categories.map((category) => {
+        return (
+          <>
+            <section
+              key={category}
+              className="deck"
+              aria-labelledby={`deck__title-${category.toLowerCase()}`}
+            >
+              <h2
+                id={`deck__title-${category.toLowerCase()}`}
+                className="bg-blue-100 px-4 py-2 text-2xl text-blue-800 dark:bg-gray-800 dark:text-blue-400"
+              >
+                <Link href={category.toLowerCase()} className="">
+                  {capitalizeFirstLetter(category)}
+                </Link>
+              </h2>
+              <ul className="deck--grid-card-image-upper mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                {/* {recipes
+                  .filter((recipe) =>
+                    recipe.category
+                      .toLowerCase()
+                      .includes(category.toLowerCase()),
+                  )
+                  .map((recipe, index) => {
+                    return (
+                      <>
+                        {recipe}
+                        <CardImageTop
+                          key={recipe.id}
+                          card={recipe}
+                          className=""
+                        ></CardImageTop>
+                      </>
+                    );
+                  })} */}
+              </ul>
+            </section>
+          </>
+        )
+        })}
     </>
   )
 }

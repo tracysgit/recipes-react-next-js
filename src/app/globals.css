@@ -18,8 +18,8 @@ body {
   
 }
 
-.site-maxwidth {
-  border: 1px solid orange;
-  max-width: 1280px;
+.maxwidth-site {
+  /* border: 1px solid orange; */
+  max-width: 1200px;
   margin:0 auto;
 }
