@@ -26,9 +26,9 @@ export default function Home() {
             >
               <h2
                 id={`deck__title-${category.toLowerCase()}`}
-                className="bg-blue-100 px-4 py-2 text-2xl text-blue-800 dark:bg-gray-800 dark:text-blue-400"
+                className="py-2 text-2xl font-semibold text-blue-800 dark:bg-gray-800 dark:text-blue-400 underline"
               >
-                <Link href={category.toLowerCase()} className="">
+                <Link href={`/category/${category.toLowerCase()}`} className="">
                   {capitalizeFirstLetter(category)}
                 </Link>
               </h2>
@@ -41,12 +41,13 @@ export default function Home() {
                   )
                   .map((recipe, index) => {
                     return (
-                      <CardImageTop
-                        key={index}
-                        card={recipe}
-                        className=""
-                      >                      
-                      </CardImageTop>
+                      <li key={index}>
+                        <CardImageTop
+                          card={recipe}
+                          className=""
+                        >                      
+                        </CardImageTop>
+                      </li>
                     );
                   })}
               </ul>

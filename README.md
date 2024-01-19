@@ -2,6 +2,7 @@
 
 ## To Do
 
+- New font   
 - Try reading and responding to query parameters
 - Slugify names and paths
 - Alphabetize cards in each category
@@ -15,6 +16,7 @@
 - JSON data and then DB
 - Editable recipes
 - Breadcrumbs
+- Add print and share buttons
 - Mobile first
 - List, category, or card selection for recipes
 - Show recipe image if text does not exist

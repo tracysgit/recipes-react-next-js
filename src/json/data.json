@@ -10,8 +10,40 @@
   ],
   "recipes": [
     {
-      "id": 11,
+      "name": "Pumpkin Bread",
+      "name_slug": "pumpkin-bread",
+      "category": "dessert",
+      "tags": [
+        "pumpkin",
+        "quick bread"
+      ],
+      "image": "dessert_pumpkin-bread",
+      "image_fullrecipe": "recipe_pumpkin-bread"
+    },
+    {
+      "name": "Cauliflower with Brown Butter, Pears, Sage & Hazelnuts",
+      "name_slug": "cauliflower-with-brown-butter-pears-sage-and-hazelnuts",
+      "category": "side",
+      "tags": [
+        "cauliflower",
+        "butter",
+        "hazelnut"
+      ],
+      "ingredients": [
+        "3 oz. (6 T.) unsalted butter",
+        "1 medium cauliflower head, cut into 3/4\" florets",
+        "1/2 c. toasted, skinned, chopped hazelnuts",
+        "8 fresh sage leaves, thinly sliced crosswise",
+        "Kosher salt and ground black pepper",
+        "2 large ripe pears, cored and thinly sliced",
+        "2 T. chopped fresh flat-leaf parsley"
+      ],
+      "directions": "In a 12-inch skillet over medium-high heat, melt the butter until light browns and bubbly. Add the cauliflower, hazelnuts, and sage. Cook 2minutes, stirring occasionally. Season with 1 t. salt and 1/2 t. pepper and continue cooking, stirring occasionally, until the cauliflower is browned and crisp-tender, 6-7 minutes more.\nRemove the pan from heat. Add the pear slices and parsley. Gently toss to combine and warm the pears. Season to taste with more salt. Serve hot or at room temperature.",
+      "servings": "8 to 10"
+    },
+    {
       "name": "Crepes",
+      "name_slug": "crepes",
       "category": "entree",
       "tags": [
         "breakfast",
@@ -30,8 +62,8 @@
       "image": "entree_crepes"
     },
     {
-      "id": 10,
       "name": "Oatmeal Carmelitas",
+      "name_slug": "oatmeal-carmelitas",
       "category": "dessert",
       "tags": [
         "dessert",
@@ -57,8 +89,8 @@
       "servings": "13&quot; x 9&quot; tray of bars"
     },
     {
-      "id": 9,
       "name": "Sables",
+      "name_slug": "sables",
       "category": "dessert",
       "tags": [
         "cookie",
@@ -78,7 +110,6 @@
       "servings": "60 cookies"
     },
     {
-      "id": 8,
       "name": "Anise Cookies",
       "category": "dessert",
       "tags": [
@@ -103,8 +134,8 @@
       "servings": "50 cookies"
     },
     {
-      "id": 7,
       "name": "Banana Bread",
+      "name_slug": "banana-bread",
       "category": "dessert",
       "tags": [
         "quick bread",
@@ -126,8 +157,8 @@
       "servings": "1 loaf"
     },
     {
-      "id": 6,
       "name": "Orange Julius",
+      "name_slug": "orange-julius",
       "category": "drink",
       "tags": [
         "smoothie",
@@ -145,8 +176,8 @@
       "servings": "2"
     },
     {
-      "id": 5,
       "name": "Chocolate Chip Cookies",
+      "name_slug": "chocolate-chip-cookies",
       "category": "dessert",
       "tags": [
         "chocolate",
@@ -170,8 +201,8 @@
       "image": "dessert_chocolate-chip-cookies"
     },
     {
-      "id": 4,
       "name": "Cream of Tomato Soup",
+      "name_slug": "cream-of-tomato-soup",
       "category": "soup",
       "tags": [
         "tomato"
@@ -194,8 +225,8 @@
       "image": "soup_cream-of-tomato"
     },
     {
-      "id": 3,
       "name": "Pesto",
+      "name_slug": "pesto",
       "category": "appetizer",
       "tags": [
         "spread",
@@ -215,8 +246,8 @@
       "servings": "1/2 cup"
     },
     {
-      "id": 2,
       "name": "Popovers",
+      "name_slug": "popovers",
       "category": "side",
       "tags": [
         "bread"
@@ -234,8 +265,8 @@
       "servings": "6 popovers"
     },
     {
-      "id": 1,
       "name": "Salad With Balsamic-Glazed Prosciutto",
+      "name_slug": "salad-with-balsamic-glazed-prosciutto",
       "category": "salad",
       "tags": [
         "greens"

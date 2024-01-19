@@ -24,23 +24,11 @@ export function getRecipesByCategory(category) {
 
 export function getRecipe(slug) {
   const recipes = getRecipes();
-  return recipes[0];
+  const filteredRecipes = recipes.filter(recipe => recipe['name_slug'] === slug);
 
-  // return recipes.filter(recipe => recipe.name.toLowerCase() === "crepe");
-
-  
-  // const recipe = (getRecipes()).filter((recipe) => {
-  //   recipe.nameSlugified = "crepe";
-  //   return recipe.name.toLowerCase() === "crepe";
-
-  // });
-  //   // recipe.nameSlugified = "crepe";
-  
-  //   // recipe.name === "Crepes"
-
-  //   // recipe.name
-  //   //   .toLowerCase()
-  //   //   .includes(recipe.nameSlugified)
-  // // ); 
-  // return recipes;
+  if (filteredRecipes) {
+    return filteredRecipes[0];
+  } else {
+    return null;
+  }
 }

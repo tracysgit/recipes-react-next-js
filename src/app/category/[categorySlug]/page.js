@@ -24,12 +24,14 @@ export default function CategorySlugPage({ params }) {
             )
             .map((recipe, index) => {
               return (
-                <CardImageTop
-                  key={index}
-                  card={recipe}
-                  className=""
-                >                      
-                </CardImageTop>
+                <li key={index}>
+                  <CardImageTop
+                    key={index}
+                    card={recipe}
+                    className=""
+                  >                      
+                  </CardImageTop>
+                </li>
               );
             })}
         </ul>
