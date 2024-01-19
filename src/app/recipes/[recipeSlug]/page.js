@@ -1,3 +1,4 @@
+import parse from 'html-react-parser';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import H1Headline from '@/components/headlines/h1Headline';
@@ -40,9 +41,9 @@ export default function RecipeSlugPage({ params }) {
             })}
           </div>}
           {(recipe.source && (recipe.source).startsWith("http")) ? (
-            <p><a href={recipe.source}>{recipe.source}</a></p>
+            <p><a href={recipe.source}>{parse(recipe.source)}</a></p>
           ) : (
-            <p>{recipe.source}</p>
+            <p>{parse(recipe.source)}</p>
           )}
         </div>
         {recipe.image && <Image
@@ -72,14 +73,16 @@ export default function RecipeSlugPage({ params }) {
           />
         </div>
       ) : (
+        <>
         <div className="recipe__ingredients md:border-b border-gray-200 dark:border-gray-700 md:p-8 mb-8 md:mb-0">
           <h2 className="text-2xl font-semibold mb-6">Ingredients</h2>
           <p>{recipe.ingredients}</p>
         </div>
-        // <div className="recipe__directions md:border-b border-gray-200 dark:border-gray-700 md:p-8 mb-8 md:mb-0">
-        //   <h2 className="text-2xl font-semibold mb-6">Directions</h2>
-        //   <p>{recipe.directions}</p>
-        // </div>
+        <div className="recipe__directions md:border-b border-gray-200 dark:border-gray-700 md:p-8 mb-8 md:mb-0">
+          <h2 className="text-2xl font-semibold mb-6">Directions</h2>
+          <p>{parse(recipe.directions)}</p>
+        </div>
+        </>
       )}
     </section>
   )

@@ -35,6 +35,7 @@
 - To run dev: "npm install" then "npm run dev"
 - Clsx: npm install --save clsx
 - Slugify: npm install slugify
+- HTML Parser: npm install html-react-parser --save
 
 - Install SWR for local data: "npm i swr"
 - Postgres: "npm i @vercel/postgres" and "npm run seed"
