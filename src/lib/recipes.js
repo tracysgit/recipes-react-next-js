@@ -5,9 +5,9 @@ export function getCategories() {
   return data.categories;
 }
 
-export function getCategory(slug) {
-  return slug;
-}
+// export function getCategory(slug) {
+//   return slug;
+// }
 
 export function getRecipes() {
   return data.recipes;

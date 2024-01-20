@@ -13,6 +13,7 @@
 - Components for different card types
 - Recipe pages
   + Fix cooking directions and line breaks
+  + Make all cards the same height
 - JSON data and then DB
 - Editable recipes
 - Breadcrumbs

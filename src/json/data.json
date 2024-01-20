@@ -111,6 +111,7 @@
     },
     {
       "name": "Anise Cookies",
+      "name_slug": "anise-cookies",
       "category": "dessert",
       "tags": [
         "cookie",

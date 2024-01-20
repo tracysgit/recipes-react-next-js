@@ -4,8 +4,6 @@ import { notFound } from 'next/navigation';
 import H1Headline from '@/components/headlines/h1Headline';
 import { getRecipe } from '@/lib/recipes';
 
-import classes from './page.module.css';
-
 export async function generateMetadata({ params }) {
   const recipe = getRecipe(params.recipeSlug);
 
