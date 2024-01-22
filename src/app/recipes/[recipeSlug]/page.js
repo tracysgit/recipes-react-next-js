@@ -5,6 +5,8 @@ import H1Headline from '@/components/headlines/h1Headline';
 import { getRecipe } from '@/lib/recipes';
 import { capitalizeFirstLetter } from '@/lib/utils';
 
+import classes from './page.module.css';
+
 export async function generateMetadata({ params }) {
   const recipe = getRecipe(params.recipeSlug);
 
@@ -19,14 +21,21 @@ export async function generateMetadata({ params }) {
 
 export default function RecipeSlugPage({ params }) {
   const recipe = getRecipe(params.recipeSlug);
+  recipe.source = parse(recipe.source);
+  recipe.ingredients = recipe.ingredients.replace(/\n/g, `</li><li>`);
+  recipe.directions = recipe.directions.replace(/\n/g, `</li><li>`);
+
+  if (!recipe) {
+    notFound();
+  }
 
   return (
     // <section aria-labelledby="headline-recipe" className="recipe__wrapper mb-8 bg-white md:border border-gray-200 rounded-lg dark:border-gray-700">
-    <section aria-labelledby="headline-recipe" className="recipe__wrapper mb-8 bg-white ">
+    <section aria-labelledby="headline-recipe" className="recipe__wrapper bg-white  grid md:grid-cols-1 gap-8">
       {/* <div className="recipe__intro grid md:grid-cols-2 gap-0 md:border-b border-gray-200 dark:border-gray-700"> */}
-      <div className="recipe__intro grid md:grid-cols-2 gap-4">
+      <div className="recipe__intro grid md:grid-cols-2 gap-8">
         {/* <div className="recipe__title flex flex-col md:p-8 mb-8 md:mb-0"> */}
-        <div className="recipe__title flex flex-col mb-4 md:mb-0">
+        <div className="recipe__title flex flex-col">
           <H1Headline id="headline-recipe">{recipe.name}</H1Headline>
           {recipe.servings && <p className="text-lg text-gray-900 dark:text-white mt-2 md:mt-0"><span className="font-semibold">Servings: </span>{recipe.servings}</p>}
           {recipe.category && <p className="text-lg text-gray-900 dark:text-white"><span className="font-semibold">Category: </span>{capitalizeFirstLetter(recipe.category)}</p>}
@@ -55,7 +64,7 @@ export default function RecipeSlugPage({ params }) {
           src={`/images/${recipe.image ? recipe.image : 'image_placeholder'}.webp`}
           width={400}
           height={250}
-          className="recipe__image w-full md:rounded-tr-lg border-gray-200 dark:border-gray-700 md:rounded-tr-lg h-80 mb-8 md:mb-0"
+          className="recipe__image w-full h-80"
           alt={recipe.image ? 'Image of ' + recipe.name : ''}
           priority
           style={{
@@ -64,7 +73,7 @@ export default function RecipeSlugPage({ params }) {
         />}
       </div>
       {recipe['image_fullrecipe'] ? (
-        <div className="recipe__directions md:border-b border-gray-200 dark:border-gray-700 md:p-8 mb-8 md:mb-0">
+        <div className="recipe__directions">
           <Image
             src={`/images/${recipe['image_fullrecipe']}.jpg`}
             width={400}
@@ -79,14 +88,22 @@ export default function RecipeSlugPage({ params }) {
         </div>
       ) : (
         <>
-          {/* <div className="recipe__ingredients md:border-b border-gray-200 dark:border-gray-700 md:p-8 mb-8 md:mb-0">
-            <h2 className="text-2xl font-semibold mb-6">Ingredients</h2>
-            <p>{recipe.ingredients}</p>
+          <div className="recipe__ingredients">
+            <h2 className="text-2xl font-semibold mb-4">Ingredients</h2>
+            <ul class="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
+              <li dangerouslySetInnerHTML={{__html: recipe.ingredients}}></li>
+            </ul>
           </div>
-          <div className="recipe__directions md:border-b border-gray-200 dark:border-gray-700 md:p-8 mb-8 md:mb-0">
-            <h2 className="text-2xl font-semibold mb-6">Directions</h2>
-            <p>{parse(recipe.directions)}</p>
+          {/* <div className="recipe__ingredients border">
+            <h2 className="text-2xl font-semibold mb-6">Ingredients</h2>
+            <li>{parse(recipe.ingredients)}</li>
           </div> */}
+          <div className="recipe__directions w-3/4">
+            <h2 className="text-2xl font-semibold mb-4">Directions</h2>
+            <ol class={`max-w-md space-y-1 list-decimal list-inside dark:text-gray-400 ${classes.directions}`}>
+              <li dangerouslySetInnerHTML={{__html: recipe.directions}}></li>
+            </ol>
+          </div>
         </>
       )}
     </section>

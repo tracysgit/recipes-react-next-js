@@ -29,8 +29,16 @@
         "butter",
         "hazelnut"
       ],
-      "ingredients": "3 oz. (6 T.) unsalted butter\n1 medium cauliflower head, cut into 3/4\" florets\n1/2 c. toasted, skinned, chopped hazelnuts\n8 fresh sage leaves, thinly sliced crosswise\nKosher salt and ground black pepper\n2 large ripe pears, cored and thinly sliced\n2 T. chopped fresh flat-leaf parsley",
-      "directions": "In a 12-inch skillet over medium-high heat, melt the butter until light browns and bubbly. Add the cauliflower, hazelnuts, and sage. Cook 2 minutes, stirring occasionally. Season with 1 t. salt and 1/2 t. pepper and continue cooking, stirring occasionally, until the cauliflower is browned and crisp-tender, 6-7 minutes more.\nRemove the pan from heat. Add the pear slices and parsley. Gently toss to combine and warm the pears. Season to taste with more salt. Serve hot or at room temperature.",
+      "ingredients": [
+        "3 oz. (6 T.) unsalted butter",
+        "1 medium cauliflower head, cut into 3/4\" florets",
+        "1/2 c. toasted, skinned, chopped hazelnuts",
+        "8 fresh sage leaves, thinly sliced crosswise",
+        "Kosher salt and ground black pepper",
+        "2 large ripe pears, cored and thinly sliced",
+        "2 T. chopped fresh flat-leaf parsley"
+      ],
+      "directions": "In a 12-inch skillet over medium-high heat, melt the butter until light browns and bubbly. Add the cauliflower, hazelnuts, and sage. Cook 2minutes, stirring occasionally. Season with 1 t. salt and 1/2 t. pepper and continue cooking, stirring occasionally, until the cauliflower is browned and crisp-tender, 6-7 minutes more.\nRemove the pan from heat. Add the pear slices and parsley. Gently toss to combine and warm the pears. Season to taste with more salt. Serve hot or at room temperature.",
       "servings": "8 to 10"
     },
     {
@@ -41,7 +49,14 @@
         "breakfast",
         "dessert"
       ],
-      "ingredients": "1 c. flour\n1-1/2 c. milk\n2 eggs\n2 T. sugar\n1 t. melted butter\n1/4 t. salt",
+      "ingredients": [
+        "1 c. flour",
+        "1-1/2 c. milk",
+        "2 eggs",
+        "2 T. sugar",
+        "1 t. melted butter",
+        "1/4 t. salt"
+      ],
       "directions": "Combine flour, milk, eggs, and butter. Add salt. Heat a lightly greased 6-inch skillet; remove from heat. Add enough batter to coat the pan. Tilt skillet to spread evenly across the skillet. Return to heat; brown on one side only. Flip crepe to brown other side of the crepe.",
       "servings": "7 crepes",
       "image": "entree_crepes"
@@ -56,12 +71,23 @@
         "butter",
         "sweet"
       ],
-      "ingredients": "2 c. flour\n2 c. quick-cook oats\n1-1/2 c. packed brown sugar\n1 t. baking soda\n1/2 t. salt\n1-1/4 c. butter\n1 c. caramel topping\n3 T. flour\n1 c. chocolate chips\n1 c. white chocolate chips",
-      "directions": "Heat oven to 350&#8457;. Grease 13\" x 9\" pan. Lightly spoon flour into measuring cup; level off. In large bowl, combine all crust ingredients; mix at low speed until crumbly. Reserve half of crumb mixture (about 3 cups) for topping. Press remaining crumb mixture in bottom of greased pan. Bake for 10 minutes.\nMeanwhile, in small bowl, combine caramel topping and 3 tablespoons flour; blend well. Remove partially baked crust from oven; sprinkle with chocolate chips and nuts. Drizzle evenly with caramel mixture; sprinkle with reserved crumb mixture. Return to oven; bake an additional 18 to 22 minutes or until golden brown. Cool 1 hour or until completely cooled. Refrigerate 1 to 2 hours or until filling is set. Cut into bars.",
+      "ingredients": [
+        "2 c. flour",
+        "2 c. quick-cook oats",
+        "1-1/2 c. packed brown sugar",
+        "1 t. baking soda",
+        "1/2 t. salt",
+        "1-1/4 c. butter",
+        "1 c. caramel topping",
+        "3 T. flour",
+        "1 c. chocolate chips",
+        "1 c. white chocolate chips"
+      ],
+      "directions": "<p>Heat oven to 350&#8457;. Grease 13\"x9\" pan. Lightly spoon flour into measuring cup; level off. In large bowl, combine all crust ingredients; mix at low speed until crumbly. Reserve half of crumb mixture (about 3 cups) for topping. Press remaining crumb mixture in bottom of greased pan. Bake for 10 minutes.</p><p>Meanwhile, in small bowl, combine caramel topping and 3 tablespoons flour; blend well. Remove partially baked crust from oven; sprinkle with chocolate chips and nuts. Drizzle evenly with caramel mixture; sprinkle with reserved crumb mixture. Return to oven; bake an additional 18 to 22 minutes or until golden brown. Cool 1 hour or until completely cooled. Refrigerate 1 to 2 hours or until filling is set. Cut into bars.</p>",
       "source": "Pilsbury",
       "source_link": "https://www.pillsbury.com/recipes/oatmeal-carmelitas",
       "image": "dessert_oatmeal-carmelitas",
-      "servings": "13\" x 9\" tray of bars"
+      "servings": "13&quot; x 9&quot; tray of bars"
     },
     {
       "name": "Sablés",
@@ -73,10 +99,15 @@
         "butter",
         "sweet"
       ],
-      "ingredients": "140 gm unsalted butter, room temperature\n125 gm white sugar\n1 large egg, room temperature\n2 c. all-purpose flour",
-      "directions": "Cream the butter and sugar until thoroughly blended. Add the egg and stir until the mixture is smooth and satiny. Add the flour all at once and mix until the dough forms clumps and curds and looks like coarse meal. Form the dough into discs. Cover and refrigerate until firm.\nRoll out the dough to 1/8&quot; thickness. Cut the cookies with a fluted, 4cm circular cookie cutter.\nBake at 350&#8457; for approximately 8-12 minutes or the preferred level of brownness.",
+      "ingredients": [
+        "140 gm unsalted butter, room temperature",
+        "125 gm white sugar",
+        "1 large egg, room temperature",
+        "2 c. all-purpose flour"
+      ],
+      "directions": "<p>Cream the butter and sugar until thoroughly blended. Add the egg and stir until the mixture is smooth and satiny. Add the flour all at once and mix until the dough forms clumps and curds and looks like coarse meal. Form the dough into discs. Cover and refrigerate until firm.</p><p>Roll out the dough to 1/8&quot; thickness. Cut the cookies with a fluted, 4cm circular cookie cutter.</p><p>Bake at 350&#8457; for approximately 8-12 minutes or the preferred level of brownness.",
       "source": "Poil&acirc;ne Bakery",
-      "source_link": "https://beautifuleatingmess.blogspot.com/2014/02/poilanes-punitions-french-butter-cookies.html",
+      "source_link": "http://beautifuleatingmess.blogspot.com/2014/02/poilanes-punitions-french-butter-cookies.html",
       "image": "dessert_sable-cookies",
       "servings": "60 cookies"
     },
@@ -90,8 +121,17 @@
         "butter",
         "sweet"
       ],
-      "ingredients": "4 c. flour\n1 t. baking powder\n1 t. baking soda\n2 sticks butter\n2 eggs\n2 T. milk\n2 c. sugar\n1/2 t. anise oil or 3-4 t. anise extract",
-      "directions": "Preheat oven to 350&#8457;.\nCombine dry ingredients. Combine remaining ingredients in a separate bowl. Combine all ingredients and mix.\nDivide dough into two balls and refrigerate. Roll out dough to 1/8 in. thick. Bake for approximately 5 minutes.",
+      "ingredients": [
+        "4 c. flour",
+        "1 t. baking powder",
+        "1 t. baking soda",
+        "2 sticks butter",
+        "2 eggs",
+        "2 T. milk",
+        "2 c. sugar",
+        "1/2 t. anise oil or 3-4 t. anise extract"
+      ],
+      "directions": "<p>Preheat oven to 350&#8457;.</p><p>Combine dry ingredients. Combine remaining ingredients in a separate bowl. Combine all ingredients and mix.</p><p>Divide dough into two balls and refrigerate. Roll out dough to 1/8 in. thick. Bake for approximately 5 minutes.</p>",
       "source": "Grandma Krebs",
       "image": "dessert_anise-cookies",
       "servings": "50 cookies"
