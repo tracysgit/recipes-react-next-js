@@ -21,21 +21,19 @@ export async function generateMetadata({ params }) {
 
 export default function RecipeSlugPage({ params }) {
   const recipe = getRecipe(params.recipeSlug);
-  recipe.source = parse(recipe.source);
-  recipe.ingredients = recipe.ingredients.replace(/\n/g, `</li><li>`);
-  recipe.directions = recipe.directions.replace(/\n/g, `</li><li>`);
+  // recipe.source = parse(recipe.source);
+  recipe.ingredients = recipe.ingredients.replace(/\n/g, `<br />`);
+  recipe.directions = recipe.directions.replace(/\n/g, `<br /><br />`);
+  // recipe.directions = recipe.directions.replace(/\n/g, `</br><li>`);
 
   if (!recipe) {
     notFound();
   }
 
   return (
-    // <section aria-labelledby="headline-recipe" className="recipe__wrapper mb-8 bg-white md:border border-gray-200 rounded-lg dark:border-gray-700">
-    <section aria-labelledby="headline-recipe" className="recipe__wrapper bg-white  grid md:grid-cols-1 gap-8">
-      {/* <div className="recipe__intro grid md:grid-cols-2 gap-0 md:border-b border-gray-200 dark:border-gray-700"> */}
+    <section aria-labelledby="headline-recipe" className="recipe__wrapper bg-white grid md:grid-cols-1 gap-8">
       <div className="recipe__intro grid md:grid-cols-2 gap-8">
-        {/* <div className="recipe__title flex flex-col md:p-8 mb-8 md:mb-0"> */}
-        <div className="recipe__title flex flex-col">
+        <div className="recipe__title flex flex-col order-last md:order-first">
           <H1Headline id="headline-recipe">{recipe.name}</H1Headline>
           {recipe.servings && <p className="text-lg text-gray-900 dark:text-white mt-2 md:mt-0"><span className="font-semibold">Servings: </span>{recipe.servings}</p>}
           {recipe.category && <p className="text-lg text-gray-900 dark:text-white"><span className="font-semibold">Category: </span>{capitalizeFirstLetter(recipe.category)}</p>}
@@ -64,7 +62,7 @@ export default function RecipeSlugPage({ params }) {
           src={`/images/${recipe.image ? recipe.image : 'image_placeholder'}.webp`}
           width={400}
           height={250}
-          className="recipe__image w-full h-80"
+          className="recipe__image w-full h-64 rounded-lg"
           alt={recipe.image ? 'Image of ' + recipe.name : ''}
           priority
           style={{
@@ -88,21 +86,15 @@ export default function RecipeSlugPage({ params }) {
         </div>
       ) : (
         <>
-          <div className="recipe__ingredients">
+          <div className="recipe__ingredients lg:max-w-[80%]">
             <h2 className="text-2xl font-semibold mb-4">Ingredients</h2>
-            <ul class="max-w-md space-y-1 list-disc list-inside dark:text-gray-400">
-              <li dangerouslySetInnerHTML={{__html: recipe.ingredients}}></li>
-            </ul>
+            <div className="space-y-1 list-disc list-inside dark:text-gray-400">
+              <p className="leading-8 md:columns-2" dangerouslySetInnerHTML={{__html: recipe.ingredients}}></p>
+            </div>
           </div>
-          {/* <div className="recipe__ingredients border">
-            <h2 className="text-2xl font-semibold mb-6">Ingredients</h2>
-            <li>{parse(recipe.ingredients)}</li>
-          </div> */}
-          <div className="recipe__directions w-3/4">
+          <div className="recipe__directions lg:max-w-[80%] space-y-1 list-disc list-inside dark:text-gray-400">
             <h2 className="text-2xl font-semibold mb-4">Directions</h2>
-            <ol class={`max-w-md space-y-1 list-decimal list-inside dark:text-gray-400 ${classes.directions}`}>
-              <li dangerouslySetInnerHTML={{__html: recipe.directions}}></li>
-            </ol>
+            <p dangerouslySetInnerHTML={{__html: recipe.directions}}></p>
           </div>
         </>
       )}
