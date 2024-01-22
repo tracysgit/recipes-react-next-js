@@ -12,7 +12,7 @@ export function CardImageTop({
     <div
       {...rest}
       className={clsx(
-        'deck__card h-auto max-w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow hover:shadow-xl hover:border-gray-300 dark:border-gray-700 dark:bg-gray-800',
+        'deck__card h-full max-w-full overflow-hidden rounded-lg border border-gray-200 bg-white shadow hover:shadow-xl hover:border-gray-300 dark:border-gray-700 dark:bg-gray-800',
         className,
       )}
     >
@@ -34,7 +34,7 @@ export function CardImageTop({
             {card.name}
           </h3>
           {/* <p className="card__copy mb-3 font-normal text-gray-700 dark:text-gray-400"></p> */}
-          <div className="card__tags pb-1 pt-3">
+          {/* <div className="card__tags pb-1 pt-3">
             {card.tags.map((tag, index) => {
               return (
                 <span
@@ -45,7 +45,7 @@ export function CardImageTop({
                 </span>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </Link>
     </div>

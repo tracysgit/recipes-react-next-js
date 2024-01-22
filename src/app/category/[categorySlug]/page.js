@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: category
+    title: capitalizeFirstLetter(category)
   };
 }
 
@@ -23,7 +23,7 @@ export default function CategorySlugPage({ params }) {
 
   return (
     <>
-      <H1Headline>{capitalizeFirstLetter(category)} Recipes</H1Headline>
+      <H1Headline>{capitalizeFirstLetter(category)}s</H1Headline>
       <section
         className="deck"
         aria-labelledby={`deck__title-${category.toLowerCase()}`}

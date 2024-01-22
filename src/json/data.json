@@ -83,13 +83,14 @@
         "1 c. chocolate chips",
         "1 c. white chocolate chips"
       ],
-      "directions": "<p>Heat oven to 350&#8457;. Grease 13&quot;x9&quot; pan. Lightly spoon flour into measuring cup; level off. In large bowl, combine all crust ingredients; mix at low speed until crumbly. Reserve half of crumb mixture (about 3 cups) for topping. Press remaining crumb mixture in bottom of greased pan. Bake for 10 minutes.</p><p>Meanwhile, in small bowl, combine caramel topping and 3 tablespoons flour; blend well. Remove partially baked crust from oven; sprinkle with chocolate chips and nuts. Drizzle evenly with caramel mixture; sprinkle with reserved crumb mixture. Return to oven; bake an additional 18 to 22 minutes or until golden brown. Cool 1 hour or until completely cooled. Refrigerate 1 to 2 hours or until filling is set. Cut into bars.</p>",
-      "source": "https://www.pillsbury.com/recipes/oatmeal-carmelitas",
+      "directions": "<p>Heat oven to 350&#8457;. Grease 13\"x9\" pan. Lightly spoon flour into measuring cup; level off. In large bowl, combine all crust ingredients; mix at low speed until crumbly. Reserve half of crumb mixture (about 3 cups) for topping. Press remaining crumb mixture in bottom of greased pan. Bake for 10 minutes.</p><p>Meanwhile, in small bowl, combine caramel topping and 3 tablespoons flour; blend well. Remove partially baked crust from oven; sprinkle with chocolate chips and nuts. Drizzle evenly with caramel mixture; sprinkle with reserved crumb mixture. Return to oven; bake an additional 18 to 22 minutes or until golden brown. Cool 1 hour or until completely cooled. Refrigerate 1 to 2 hours or until filling is set. Cut into bars.</p>",
+      "source": "Pilsbury",
+      "source_link": "https://www.pillsbury.com/recipes/oatmeal-carmelitas",
       "image": "dessert_oatmeal-carmelitas",
       "servings": "13&quot; x 9&quot; tray of bars"
     },
     {
-      "name": "Sables",
+      "name": "Sablés",
       "name_slug": "sables",
       "category": "dessert",
       "tags": [
@@ -106,6 +107,7 @@
       ],
       "directions": "<p>Cream the butter and sugar until thoroughly blended. Add the egg and stir until the mixture is smooth and satiny. Add the flour all at once and mix until the dough forms clumps and curds and looks like coarse meal. Form the dough into discs. Cover and refrigerate until firm.</p><p>Roll out the dough to 1/8&quot; thickness. Cut the cookies with a fluted, 4cm circular cookie cutter.</p><p>Bake at 350&#8457; for approximately 8-12 minutes or the preferred level of brownness.",
       "source": "Poil&acirc;ne Bakery",
+      "source_link": "http://beautifuleatingmess.blogspot.com/2014/02/poilanes-punitions-french-butter-cookies.html",
       "image": "dessert_sable-cookies",
       "servings": "60 cookies"
     },
@@ -286,7 +288,8 @@
       ],
       "directions": "<p>In a large bowl, whisk 1 tablespoon each of both vinegars with the mustard. Whisk in 2 tablespoons of the olive oil and season with salt and pepper. Add the greens and chopped eggs but don't toss.</p><p>In a large skillet, melt 2 tablespoons of the butter in the remaining 2 tablespoons of oil. Cook over moderately high heat until the butter begins to brown, about 1 minute. Add the prosciutto and cook, stirring occasionally, until crisp, 2 to 3 minutes. Add the remaining 1/4 cup of balsamic vinegar and 2 tablespoons of red wine vinegar and cook until slightly reduced, about 2 minutes. Remove from the heat. Swirl in the remaining 3 tablespoons of butter until melted.</p><p>Toss the greens, season with salt and pepper and transfer to plates. Spoon the hot dressing over the greens and serve.</p>",
       "servings": "6",
-      "source": "<a href=\"http://www.foodandwine.com/recipes/salad-of-bitter-greens-with-balsamic-glazed-prosciutto\">http://www.foodandwine.com/recipes/salad-of-bitter-greens-with-balsamic-glazed-prosciutto</a>",
+      "source": "Food & Wine",
+      "source_link": "http://www.foodandwine.com/recipes/salad-of-bitter-greens-with-balsamic-glazed-prosciutto",
       "image": "salad_balsamic-glazed-prosciutto"
     }
   ]

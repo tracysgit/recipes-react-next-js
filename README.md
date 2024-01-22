@@ -5,6 +5,7 @@
 - New font   
 - Try reading and responding to query parameters
 - Slugify names and paths
+- Back button
 - Alphabetize cards in each category
 - Accessible nav (aria-current="page") with hamburger
 - Search bar

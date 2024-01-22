@@ -8,7 +8,7 @@ export default function NavMain() {
 
   return (
     <nav className="main-nav" aria-label="Main Menu">
-      <ul className={`flex flex-row flex-wrap justify-start my-3`}>
+      <ul className={`flex flex-row flex-wrap justify-start my-3 -mx-2`}>
         <li><Navlink href="/">Home</Navlink></li>
         
         {categories.map((category) => {
@@ -16,7 +16,7 @@ export default function NavMain() {
 
           return (
             <>
-              <li key={category}><Navlink href={`/category/${category}`}>{categoryCapital}</Navlink></li>
+              <li key={category}><Navlink href={`/category/${category}`}>{categoryCapital}s</Navlink></li>
             </>
           );
         })}
