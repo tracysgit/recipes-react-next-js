@@ -22,7 +22,8 @@ export default function Home() {
           <>
             <section
               key={category}
-              className="deck"
+              //className="deck"
+              className="deck border  rounded-xl border-gray-200 px-6 pt-3 pb-0 mb-8"
               aria-labelledby={`deck__title-${category.toLowerCase()}`}
             >
               <h2

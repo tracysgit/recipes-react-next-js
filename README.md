@@ -5,23 +5,18 @@
 - New font   
 - Try reading and responding to query parameters
 - Slugify names and paths
-- Back button
-- Bullet wrapping and indentation
-- Alphabetize cards in each category
-- Accessible nav (aria-current="page") with hamburger
 - Search bar
 - Handle not found and errors
 - Add unique head content per page
 - Components for different card types
-- Error and 404 pages
 - JSON data and then DB
 - Editable recipes
+- Render Home page recipes as cards or list
 - Breadcrumbs
-- Add print and share buttons
+- Add print, back, and share buttons
 - Mobile first
-- List, category, or card selection for recipes
-- Show recipe image if text does not exist
 - Tab focus
+- Make navigation hamburger accessible
 - Add typescript
 - Dark Mode
 
