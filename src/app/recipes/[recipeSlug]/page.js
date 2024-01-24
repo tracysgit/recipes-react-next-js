@@ -21,13 +21,16 @@ export async function generateMetadata({ params }) {
 
 export default function RecipeSlugPage({ params }) {
   const recipe = getRecipe(params.recipeSlug);
-  // recipe.source = parse(recipe.source);
-  recipe.ingredients = recipe.ingredients.replace(/\n/g, `<br />`);
-  recipe.directions = recipe.directions.replace(/\n/g, `<br /><br />`);
-  // recipe.directions = recipe.directions.replace(/\n/g, `</br><li>`);
 
   if (!recipe) {
     notFound();
+  }
+
+  if (recipe.ingredients) {
+    recipe.ingredients.replace(/\n/g, `<br />`);
+  }
+  if (recipe.directions) {
+    recipe.directions.replace(/\n/g, `<br />`);
   }
 
   return (
@@ -76,11 +79,13 @@ export default function RecipeSlugPage({ params }) {
             src={`/images/${recipe['image_fullrecipe']}.jpg`}
             width={400}
             height={400}
-            className="w-full h-auto"
+            className="w-auto h-auto mx-auto"
             alt={`Image of ${recipe['image_fullrecipe']} `}
             priority
             style={{
-              objectFit: 'contain',
+              // objectFit: 'contain',
+              // width: 'auto',
+              // height: 'auto',
             }}
           />
         </div>
@@ -89,7 +94,8 @@ export default function RecipeSlugPage({ params }) {
           <div className="recipe__ingredients lg:max-w-[80%]">
             <h2 className="text-2xl font-semibold mb-4">Ingredients</h2>
             <div className="space-y-1 list-disc list-inside dark:text-gray-400">
-              <p className="leading-8 md:columns-2" dangerouslySetInnerHTML={{__html: recipe.ingredients}}></p>
+              {/* <p className="leading-8 md:columns-2" dangerouslySetInnerHTML={{__html: recipe.ingredients}}></p> */}
+              <p className="leading-8" dangerouslySetInnerHTML={{__html: recipe.ingredients}}></p>
             </div>
           </div>
           <div className="recipe__directions lg:max-w-[80%] space-y-1 list-disc list-inside dark:text-gray-400">

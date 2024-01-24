@@ -10,6 +10,110 @@
   ],
   "recipes": [
     {
+      "name": "Ensalada de Uvas",
+      "name_slug": "ensalada-de-uvas",
+      "category": "salad",
+      "tags": [
+        "grape",
+        "savory",
+        "salad"
+      ],
+      "ingredients": "1 c. seedless red grapes\n1 c. seedless green grapes\n1/2 c. small cherry tomatoes\n1 c. fresh cilengene (small mozzarella balls or cut larger mozzarella chunks into 1\" cubes)\n1 c. pitted black olives or kalamatas\n2 T. chopped fresh mint\n1 T. minced fresh garlic\n1 t. grated lemon peel\n2 T. sherry vinegar\n1/4 c. extra virgin olive oil\nsalt and pepper to taste",
+      "directions": "Toss all ingredients well and chill for 1 hour before serving. Can be eaten at room temperature.",
+      "servings": "8 tapas servings",
+      "image": "salad_ensalada-de-uvas"
+    },
+    {
+      "name": "Gazpacho with Avocado and Crab",
+      "name_slug": "gazpacho-with-avocado-and-crab",
+      "category": "soup",
+      "tags": [
+        "gazpacho",
+        "avocado",
+        "crab",
+        "soup"
+      ],
+      "servings": "4",
+      "image": "soup_gazpacho-with-avocado-and-crab",
+      "image_fullrecipe": "recipe_gazpacho-with-avocado-and-crab"
+    },
+    {
+      "name": "Chicken Saltimbocca",
+      "name_slug": "chicken-saltimbocca",
+      "category": "entree",
+      "tags": [
+        "chicken",
+        "proscuitto",
+        "sage"
+      ],
+      "servings": "4",
+      "image": "entree_chicken-saltimbocca",
+      "image_fullrecipe": "recipe_chicken-saltimbocca"
+    },
+    {
+      "name": "Oven Steamed Mussels",
+      "name_slug": "oven-steamed-mussels",
+      "category": "side",
+      "tags": [
+        "mussels",
+        "bacon",
+        "cider",
+        "wine",
+        "steamed"
+      ],
+      "source": "Cooks Illustrated",
+      "servings": "2 to 4",
+      "image": "side_oven-steamed-mussels",
+      "image_fullrecipe": "recipe_oven-steamed-mussels"
+    },
+    {
+      "name": "Chicken Marsala",
+      "name_slug": "chicken-marsala",
+      "category": "entree",
+      "tags": [
+        "chicken",
+        "mushrooms"
+      ],
+      "servings": "4",
+      "image": "entree_chicken-marsala",
+      "image_fullrecipe": "recipe_chicken-marsala"
+    },
+    {
+      "name": "Espinacas con Garbanzos",
+      "name_slug": "espinacas-con-garbanzos",
+      "category": "entree",
+      "tags": [
+        "garbazos",
+        "spinach"
+      ],
+      "servings": "4",
+      "image": "entree_espinacas-con-garbanzos",
+      "image_fullrecipe": "recipe_espinacas-con-garbanzos"
+    },
+    {
+      "name": "Smoked Fish Chowder",
+      "name_slug": "smoked-fish-chowder",
+      "category": "soup",
+      "tags": [
+        "fish",
+        "soup"
+      ],
+      "servings": "4",
+      "image": "soup_smoked-fish-chowder",
+      "image_fullrecipe": "recipe_smoked-fish-chowder"
+    },
+    {
+      "name": "Peanut Butter Cookies",
+      "name_slug": "peanut-butter-cookies",
+      "category": "dessert",
+      "tags": [
+        "peanut butter",
+        "cookie"
+      ],
+      "image": "dessert_peanut-butter-cookies",
+      "image_fullrecipe": "recipe_peanut-butter-cookies"
+    },
+    {
       "name": "Pumpkin Bread",
       "name_slug": "pumpkin-bread",
       "category": "dessert",
@@ -31,7 +135,8 @@
       ],
       "ingredients": "3 oz. (6 T.) unsalted butter\n1 medium cauliflower head, cut into 3/4\" florets\n1/2 c. toasted, skinned, chopped hazelnuts\n8 fresh sage leaves, thinly sliced crosswise\nKosher salt and ground black pepper\n2 large ripe pears, cored and thinly sliced\n2 T. chopped fresh flat-leaf parsley",
       "directions": "In a 12-inch skillet over medium-high heat, melt the butter until light browns and bubbly. Add the cauliflower, hazelnuts, and sage. Cook 2 minutes, stirring occasionally. Season with 1 t. salt and 1/2 t. pepper and continue cooking, stirring occasionally, until the cauliflower is browned and crisp-tender, 6-7 minutes more.\nRemove the pan from heat. Add the pear slices and parsley. Gently toss to combine and warm the pears. Season to taste with more salt. Serve hot or at room temperature.",
-      "servings": "8 to 10"
+      "servings": "8 to 10",
+      "image": "side_cauliflower-with-brown-butter-pears-sage-and-hazelnuts"
     },
     {
       "name": "Crepes",
@@ -45,6 +150,22 @@
       "directions": "Combine flour, milk, eggs, and butter. Add salt. Heat a lightly greased 6-inch skillet; remove from heat. Add enough batter to coat the pan. Tilt skillet to spread evenly across the skillet. Return to heat; brown on one side only. Flip crepe to brown other side of the crepe.",
       "servings": "7 crepes",
       "image": "entree_crepes"
+    },
+    {
+      "name": "Dutch Baby",
+      "name_slug": "dutch-baby",
+      "category": "dessert",
+      "tags": [
+        "dessert",
+        "pancake",
+        "sweet"
+      ],
+      "ingredients": "3 large eggs, at room temperature\n1/2 c. all-purpose flour\n1/2 c. whole milk, at room temperature\n1 T. sugar\nPinch of nutmeg\n4 T. unsalted butter\nConfectioner's sugar",
+      "directions": "Preheat oven to 425&#8457;.\nCombine eggs, flour, milk, sugar, and nutmeg, and blend until smooth.\nPlace butter in a heavy 10-inch skillet and place in the oven. When butter has melted, add batter to the pan. Return the pan to the oven and bake for 20 minutes, until the pancake is puffed and golden. Lower oven temperature to 300&#8457; and bake five minutes longer.\nSprinkle with confectioner's sugar before serving.",
+      "source": "New York Times",
+      "source_link": "https://cooking.nytimes.com/recipes/6648-dutch-baby",
+      "servings": "3 to 4",
+      "image": "dessert_dutch-baby"
     },
     {
       "name": "Oatmeal Carmelitas",

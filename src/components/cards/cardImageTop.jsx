@@ -18,7 +18,7 @@ export function CardImageTop({
     >
       <Link href={`/recipes/${card['name_slug']}`}>
         <Image
-          src={`/images/${card.image ? card.image : 'image_placeholder'}.webp`}
+          src={`/images/${card.image ? card.image : 'image_placeholder'}.jpg`}
           width={400}
           height={150}
           className="card__image w-full"

@@ -13,9 +13,7 @@
 - Handle not found and errors
 - Add unique head content per page
 - Components for different card types
-- Recipe pages
-  + Fix cooking directions and line breaks
-  + Make all cards the same height
+- Error and 404 pages
 - JSON data and then DB
 - Editable recipes
 - Breadcrumbs
@@ -24,6 +22,7 @@
 - List, category, or card selection for recipes
 - Show recipe image if text does not exist
 - Tab focus
+- Add typescript
 - Dark Mode
 
 ## Features
