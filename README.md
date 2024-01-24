@@ -2,20 +2,13 @@
 
 ## To Do
 
-- New font   
-- Try reading and responding to query parameters
-- Slugify names and paths
-- Search bar
+- Add a search bar
 - Handle not found and errors
-- Add unique head content per page
-- Components for different card types
 - JSON data and then DB
-- Editable recipes
 - Render Home page recipes as cards or list
-- Breadcrumbs
+- Make recipes editable
+- Add Breadcrumbs
 - Add print, back, and share buttons
-- Mobile first
-- Tab focus
 - Make navigation hamburger accessible
 - Add typescript
 - Dark Mode
