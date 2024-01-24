@@ -16,7 +16,7 @@ export default function NavMain() {
 
           return (
             <>
-              <li key={category}><Navlink href={`/category/${category}`}>{categoryCapital}s</Navlink></li>
+              <li key={category}><Navlink href={`/${category}`}>{categoryCapital}</Navlink></li>
             </>
           );
         })}

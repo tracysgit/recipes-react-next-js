@@ -23,7 +23,7 @@ export default function CategorySlugPage({ params }) {
 
   return (
     <>
-      <H1Headline>{capitalizeFirstLetter(category)}s</H1Headline>
+      <H1Headline>{capitalizeFirstLetter(category)}</H1Headline>
       <section
         className="deck"
         aria-labelledby={`deck__title-${category.toLowerCase()}`}
@@ -41,6 +41,7 @@ export default function CategorySlugPage({ params }) {
                   <CardImageTop
                     key={index}
                     card={recipe}
+                    linkRoute={`/${recipe.category}/`}
                     className=""
                   >                      
                   </CardImageTop>

@@ -29,8 +29,8 @@ export default function Home() {
                 id={`deck__title-${category.toLowerCase()}`}
                 className="py-2 text-2xl font-semibold text-blue-800 dark:bg-gray-800 dark:text-blue-400 underline"
               >
-                <Link href={`/category/${category.toLowerCase()}`} className="">
-                  {capitalizeFirstLetter(category)}s
+                <Link href={`/${category.toLowerCase()}`} className="">
+                  {capitalizeFirstLetter(category)}
                 </Link>
               </h2>
               <ul className="deck--grid-card-image-upper mb-10 mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -44,6 +44,7 @@ export default function Home() {
                     return (
                       <li key={index}>
                         <CardImageTop
+                          linkRoute={`/${recipe.category}/`}
                           card={recipe}
                           className=""
                         >                      

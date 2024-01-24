@@ -6,6 +6,7 @@ export function CardImageTop({
   card,
   children,
   className,
+  linkRoute,
   ...rest
 }) {
   return (
@@ -16,7 +17,7 @@ export function CardImageTop({
         className,
       )}
     >
-      <Link href={`/recipes/${card['name_slug']}`}>
+      <Link href={`${linkRoute}${card['name_slug']}`}>
         <Image
           src={`/images/${card.image ? card.image : 'image_placeholder'}.jpg`}
           width={400}

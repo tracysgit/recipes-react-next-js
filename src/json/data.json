@@ -1,18 +1,18 @@
 {
   "categories": [
-    "entree",
-    "appetizer",
-    "soup",
-    "salad",
-    "side",
-    "dessert",
-    "drink"
+    "entrees",
+    "appetizers",
+    "soups",
+    "salads",
+    "sides",
+    "desserts",
+    "drinks"
   ],
   "recipes": [
     {
       "name": "Ensalada de Uvas",
       "name_slug": "ensalada-de-uvas",
-      "category": "salad",
+      "category": "salads",
       "tags": [
         "grape",
         "savory",
@@ -26,7 +26,7 @@
     {
       "name": "Gazpacho with Avocado and Crab",
       "name_slug": "gazpacho-with-avocado-and-crab",
-      "category": "soup",
+      "category": "soups",
       "tags": [
         "gazpacho",
         "avocado",
@@ -40,7 +40,7 @@
     {
       "name": "Chicken Saltimbocca",
       "name_slug": "chicken-saltimbocca",
-      "category": "entree",
+      "category": "entrees",
       "tags": [
         "chicken",
         "proscuitto",
@@ -53,7 +53,7 @@
     {
       "name": "Oven Steamed Mussels",
       "name_slug": "oven-steamed-mussels",
-      "category": "side",
+      "category": "sides",
       "tags": [
         "mussels",
         "bacon",
@@ -69,7 +69,7 @@
     {
       "name": "Chicken Marsala",
       "name_slug": "chicken-marsala",
-      "category": "entree",
+      "category": "entrees",
       "tags": [
         "chicken",
         "mushrooms"
@@ -81,7 +81,7 @@
     {
       "name": "Espinacas con Garbanzos",
       "name_slug": "espinacas-con-garbanzos",
-      "category": "entree",
+      "category": "entrees",
       "tags": [
         "garbazos",
         "spinach"
@@ -93,7 +93,7 @@
     {
       "name": "Smoked Fish Chowder",
       "name_slug": "smoked-fish-chowder",
-      "category": "soup",
+      "category": "soups",
       "tags": [
         "fish",
         "soup"
@@ -105,7 +105,7 @@
     {
       "name": "Peanut Butter Cookies",
       "name_slug": "peanut-butter-cookies",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "peanut butter",
         "cookie"
@@ -116,7 +116,7 @@
     {
       "name": "Pumpkin Bread",
       "name_slug": "pumpkin-bread",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "pumpkin",
         "quick bread"
@@ -127,7 +127,7 @@
     {
       "name": "Cauliflower with Brown Butter, Pears, Sage & Hazelnuts",
       "name_slug": "cauliflower-with-brown-butter-pears-sage-and-hazelnuts",
-      "category": "side",
+      "category": "sides",
       "tags": [
         "cauliflower",
         "butter",
@@ -141,7 +141,7 @@
     {
       "name": "Crepes",
       "name_slug": "crepes",
-      "category": "entree",
+      "category": "entrees",
       "tags": [
         "breakfast",
         "dessert"
@@ -154,7 +154,7 @@
     {
       "name": "Dutch Baby",
       "name_slug": "dutch-baby",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "dessert",
         "pancake",
@@ -170,7 +170,7 @@
     {
       "name": "Oatmeal Carmelitas",
       "name_slug": "oatmeal-carmelitas",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "dessert",
         "oatmeal",
@@ -187,7 +187,7 @@
     {
       "name": "Sablés",
       "name_slug": "sables",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "cookie",
         "punition",
@@ -204,7 +204,7 @@
     {
       "name": "Anise Cookies",
       "name_slug": "anise-cookies",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "cookie",
         "anise",
@@ -220,7 +220,7 @@
     {
       "name": "Banana Bread",
       "name_slug": "banana-bread",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "quick bread",
         "banana",
@@ -234,7 +234,7 @@
     {
       "name": "Orange Julius",
       "name_slug": "orange-julius",
-      "category": "drink",
+      "category": "drinks",
       "tags": [
         "smoothie",
         "orange"
@@ -247,7 +247,7 @@
     {
       "name": "Chocolate Chip Cookies",
       "name_slug": "chocolate-chip-cookies",
-      "category": "dessert",
+      "category": "desserts",
       "tags": [
         "chocolate",
         "sweet"
@@ -260,7 +260,7 @@
     {
       "name": "Cream of Tomato Soup",
       "name_slug": "cream-of-tomato-soup",
-      "category": "soup",
+      "category": "soups",
       "tags": [
         "tomato"
       ],
@@ -272,7 +272,7 @@
     {
       "name": "Pesto",
       "name_slug": "pesto",
-      "category": "appetizer",
+      "category": "appetizers",
       "tags": [
         "spread",
         "basil",
@@ -286,7 +286,7 @@
     {
       "name": "Popovers",
       "name_slug": "popovers",
-      "category": "side",
+      "category": "sides",
       "tags": [
         "bread"
       ],
@@ -298,7 +298,7 @@
     {
       "name": "Salad With Balsamic-Glazed Prosciutto",
       "name_slug": "salad-with-balsamic-glazed-prosciutto",
-      "category": "salad",
+      "category": "salads",
       "tags": [
         "greens"
       ],
