@@ -6,7 +6,7 @@ export default function Header() {
     <header className="bg-blue-800 px-4 md:px-6 text-white">
       <div className="maxwidth-site flex md:flex-row flex-col justify-between items-center gap-4">
         <NavMain />
-        <Search />
+        {/* <Search /> */}
       </div>
     </header>
   )

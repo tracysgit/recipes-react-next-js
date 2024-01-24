@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Pacifico&family=Satisfy&family=Tangerine&family=Questrial&family=Urbanist:wght@400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Urbanist', Arial, "Proxima Nova", system-ui, sans-serif;
+  }
+}
+
+
+/* Variables */
 :root {
- --color-primary: papayawhip;
+  --font-body: 'Urbanist', Arial, Proxima Nova, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,7 +25,7 @@
 }
 
 body {
-  
+  font-family: var(--font-body);
 }
 
 .maxwidth-site {
@@ -50,7 +60,7 @@ body {
   padding: 28px 20px;
   position: relative;
   user-select: none;
-  margin-top: 15px;
+  /* margin-top: 15px; */
 }
 .mainnav .mainmenu-icon .navicon {
   background: #FFF;
@@ -89,6 +99,7 @@ body {
 }
 .mainnav .mainmenu-btn:checked ~ .mainmenu {
   max-height: 240px;
+  margin-bottom: 20px;
 }
 .mainnav .mainmenu-btn:checked ~ .mainmenu-icon .navicon {
   background: transparent;

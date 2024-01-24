@@ -26,10 +26,6 @@ export default function RecipeSlugPage({ params }) {
     notFound();
   }
 
-  // let pattern = /\n/g;
-  // let result = pattern.test(recipe.ingredients);
-  // console.log("Contains pattern", pattern, result);
-
   if ('ingredients' in recipe) {
     recipe.ingredients_edited = recipe.ingredients.replace(/\n/g, `<br />`);
   }
@@ -99,13 +95,13 @@ export default function RecipeSlugPage({ params }) {
             <h2 className="text-2xl font-semibold mb-4">Ingredients</h2>
             <div className="space-y-1 list-disc list-inside dark:text-gray-400">
               {/* <p className="leading-8 md:columns-2" dangerouslySetInnerHTML={{__html: recipe.ingredients}}></p> */}
-              <p className="leading-8">{parse(recipe.ingredients_edited)}</p>
+              <p className="leading-8 text-lg">{parse(recipe.ingredients_edited)}</p>
             </div>
           </div>
           <div className="recipe__directions lg:max-w-[80%] space-y-1 list-disc list-inside dark:text-gray-400">
             <h2 className="text-2xl font-semibold mb-4">Directions</h2>
             {/* <p dangerouslySetInnerHTML={{__html: recipe.directions}}></p> */}
-            <p>{parse(recipe.directions_edited)}</p>
+            <p className="text-lg">{parse(recipe.directions_edited)}</p>
           </div>
         </>
       )}

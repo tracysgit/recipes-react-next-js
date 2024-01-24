@@ -22,15 +22,15 @@ export default function Home() {
           <>
             <section
               key={category}
-              //className="deck"
-              className="deck border  rounded-xl border-gray-200 px-6 pt-3 pb-0 mb-8"
+              className="deck"
+              // className="deck border bg-gray-100 rounded-xl border-gray-200 px-6 pt-3 pb-0 mb-8"
               aria-labelledby={`deck__title-${category.toLowerCase()}`}
             >
               <h2
                 id={`deck__title-${category.toLowerCase()}`}
-                className="py-2 text-2xl font-semibold text-blue-800 dark:bg-gray-800 dark:text-blue-400 underline"
+                className="mt-2 pt-2 text-4xl text-blue-800 dark:bg-gray-800 dark:text-blue-400 font-sacramento"
               >
-                <Link href={`/${category.toLowerCase()}`} className="">
+                <Link href={`/${category.toLowerCase()}`} className="hover:underline">
                   {capitalizeFirstLetter(category)}
                 </Link>
               </h2>

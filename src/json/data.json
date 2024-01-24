@@ -141,9 +141,9 @@
     {
       "name": "Crepes",
       "name_slug": "crepes",
-      "category": "entrees",
+      "category": "sides",
       "tags": [
-        "breakfast",
+        "bread",
         "dessert"
       ],
       "ingredients": "1 c. flour\n1-1/2 c. milk\n2 eggs\n2 T. sugar\n1 t. melted butter\n1/4 t. salt",
@@ -227,7 +227,7 @@
         "sweet"
       ],
       "ingredients": "2 c. flour\n1 t. baking soda\n1/2 t. salt\n1 egg\n1/2 c. oil\n3 bananas\n1 c. sugar\n1 t. vanilla",
-      "directions": "Preheat oven to 350&#8457;.\nMash bananas, and mix other wet ingredients. In a separate bowl, mix dry ingredients. Combine. Add batter to greased bread tin.\nCook for 1 hour.",
+      "directions": "Preheat oven to 350&#8457;.\nMash bananas, and mix other wet ingredients. In a separate bowl, mix dry ingredients. Combine. Add batter to greased bread tin.\nCook for 1 hour or until a skewer comes out clean.",
       "image": "dessert_banana-bread",
       "servings": "1 loaf"
     },
