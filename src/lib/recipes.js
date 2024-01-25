@@ -58,7 +58,7 @@ export async function saveRecipe(recipe) {
     }
   });
 
-  recipe.image = `/images/${fileName}`; //Public folder is implied
+  recipe.image = `${fileName}`; //Public/images folder is implied
 
   db.prepare(`
     INSERT INTO recipes

@@ -7,7 +7,7 @@ function isInvalidText(text) {
   return !text || text.trim() === '';
 }
 
-export async function submitRecipe(prevState, formData) {
+export async function submitRecipe(formData) {
   const recipe = { 
     name: formData.get('name'),
     category: formData.get('category'),
@@ -37,7 +37,7 @@ export async function submitRecipe(prevState, formData) {
     };
   }
 
-  // console.log("---> recipe",recipe);
+  console.log("---> recipe",recipe);
 
   await saveRecipe(recipe);
   redirect('/');

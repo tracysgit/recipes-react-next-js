@@ -71,7 +71,7 @@ export default async function RecipeSlugPage({ params }) {
             </div>}
           </div>
           {recipe.image && <Image
-            src={`/images/${recipe.image ? recipe.image : 'image_placeholder'}.webp`}
+            src={`/images/${recipe.image ? recipe.image : 'image_placeholder'}`}
             width={400}
             height={250}
             className="recipe__image w-full h-64 rounded-lg"

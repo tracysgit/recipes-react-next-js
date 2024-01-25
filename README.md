@@ -2,7 +2,7 @@
 
 ## To Do
 
-- Submitted images not working
+- Add all recipes
 - Add second image capture
 - Refactor headline/header with 'Add Recipe' button
 - Can Image component handle pngs too?

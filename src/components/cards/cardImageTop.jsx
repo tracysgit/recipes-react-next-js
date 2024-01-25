@@ -19,7 +19,7 @@ export function CardImageTop({
     >
       <Link href={`${linkRoute}${card['name_slug']}`}>
         <Image
-          src={`/images/${card.image ? card.image : 'image_placeholder'}.jpg`}
+          src={`/images/${card.image ? card.image : 'image_placeholder'}`}
           width={400}
           height={150}
           className="card__image w-full"

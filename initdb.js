@@ -16,7 +16,7 @@ const dummyRecipes = [
     "source": "New York Times",
     "source_link": "https://cooking.nytimes.com/recipes/6648-dutch-baby",
     "servings": "3 to 4",
-    "image": "dessert_dutch-baby",
+    "image": "dessert_dutch-baby.webp",
     "image_fullrecipe": ""
   }
 ];

@@ -53,7 +53,7 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="ingredients">Ingredients</label>
-            <p>Start a new line for each ingredient.</p>
+            <p>Each ingredient should be on its own line (hit 'return' between ingredients).</p>
             <textarea
               id="ingredients"
               name="ingredients"
@@ -62,7 +62,7 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="directions">Directions</label>
-            <p>Start a new line for each new group of steps.</p>
+            <p>Each paragraph should be on its own line (hit 'return' between paragraphs).</p>
             <textarea
               id="directions"
               name="directions"
