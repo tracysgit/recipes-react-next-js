@@ -1,5 +1,7 @@
+import fs from 'node:fs';
 import sql from 'better-sqlite3';
-import { slugifyString } from './utils';
+import slugify from 'slugify';
+import xss from 'xss';
 import data from '@/json/data.json';
 
 const db = sql('recipes.db');
@@ -35,4 +37,43 @@ export async function getRecipe(slug) {
   //   return null;
   // }
   return db.prepare('SELECT * FROM recipes WHERE name_slug = ?').get(slug);
+}
+
+export async function saveRecipe(recipe) {
+  //Image should be stored on the system, while its path should be stored in the DB.
+
+  recipe.name_slug = slugify(recipe.name, { lower: true });
+  recipe.ingredients = xss(recipe.ingredients);
+  recipe.directions = xss(recipe.directions);
+
+  const extension = recipe.image.name.split().pop();
+  const fileName = `${recipe.name_slug}.${extension}`;
+
+  const stream = fs.createWriteStream(`public/images/${fileName}`);
+  const bufferedImage = await recipe.image.arrayBuffer();
+
+  stream.write(Buffer.from(bufferedImage), (error)=> {
+    if(error) {
+      throw new Error('Saving image failed!');
+    }
+  });
+
+  recipe.image = `/images/${fileName}`; //Public folder is implied
+
+  db.prepare(`
+    INSERT INTO recipes
+      (name, name_slug, category, ingredients, directions, source, source_link, servings, image, image_fullrecipe)
+    VALUES (
+      @name,
+      @name_slug,
+      @category,
+      @ingredients,
+      @directions,
+      @source,
+      @source_link,
+      @servings,
+      @image,
+      @image_fullrecipe
+    )
+  `).run(recipe);
 }

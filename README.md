@@ -2,6 +2,8 @@
 
 ## To Do
 
+- Refactor headline/header with 'Add Recipe' button
+- Can Image component handle pngs too?
 - Add a search bar
 - Render Home page recipes as cards or list
 - Make recipes editable
@@ -22,8 +24,6 @@
 - Node.js 18.17.0 or later is required (check with "node -v").
 - To run dev: "npm install" then "npm run dev"
 - Clsx: npm install --save clsx
-- Slugify: npm install slugify
+- Slugify & XSS: "npm install slugify xss"
 - HTML Parser: npm install html-react-parser --save
 - DB: "npm install better-sqlite3", start with initdb.js in root folder, then "node initdb.js"
-- Authentication: "npm install next-auth@beta" 
-- Generate a secret key: "openssl rand -base64 32"

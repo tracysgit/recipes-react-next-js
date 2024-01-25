@@ -5,23 +5,31 @@
   margin-bottom: 1rem;
 }
 
+.picker label {
+  font-weight: bold;
+}
+
 .picker .input {
   display: none;
 }
 
+.picker .note {
+  margin: 0 0 0.5rem;
+}
+/* 
 .picker .button {
   border: 0;
   padding: 0.5rem 1.5rem;
   background: #a4abb9;
   border-radius: 2px;
   cursor: pointer;
-  font: inherit;
+  font: inherit; 
 }
 
 .picker .button:hover,
 .picker .button:focus {
   background: #b3b9c6;
-}
+} */
 
 .preview {
   width: 10rem;

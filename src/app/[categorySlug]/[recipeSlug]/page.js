@@ -45,8 +45,8 @@ export default async function RecipeSlugPage({ params }) {
       />
       <section aria-labelledby="headline-recipe" className="recipe__wrapper bg-white grid md:grid-cols-1 gap-8">
         <div className="recipe__intro grid md:grid-cols-2 gap-8">
-          <div className="recipe__title flex flex-col order-last md:order-first">
-            <H1Headline id="headline-recipe">{recipe.name}</H1Headline>
+          <div className="recipe__title flex flex-col order-last md:order-first"> 
+            <H1Headline id="headline-recipe" extraclasses="mb-2 md:mb-6 lg:mb-8">{recipe.name}</H1Headline>
             {recipe.servings && <p className="text-lg text-gray-900 dark:text-white mt-2 md:mt-0"><span className="font-semibold">Servings: </span>{recipe.servings}</p>}
             {recipe.category && <p className="text-lg text-gray-900 dark:text-white"><span className="font-semibold">Category: </span>{capitalizeFirstLetter(recipe.category)}</p>}
             {recipe.source && 

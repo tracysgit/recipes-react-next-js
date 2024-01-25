@@ -18,7 +18,7 @@ export default function Button(props) {
           {props.children}
         </a>
       ) : (
-        <button type="submit" className={`${baseclasses} ${props.extraclasses}`} {...props}>{props.children}</button>
+        <button className={`${baseclasses} ${props.extraclasses}`} {...props}>{props.children}</button>
         
       )
       }
