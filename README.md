@@ -7,7 +7,6 @@
 - JSON data and then DB
 - Render Home page recipes as cards or list
 - Make recipes editable
-- Add Breadcrumbs
 - Add print, back, and share buttons
 - Make navigation hamburger accessible
 - Add typescript

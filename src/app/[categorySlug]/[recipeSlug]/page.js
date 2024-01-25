@@ -37,11 +37,12 @@ export default function RecipeSlugPage({ params }) {
   return (
     <>
       <Breadcrumbs homeElement={'Home'}
-          // separator={<span> | </span>}
-          separator={<span> &rsaquo; </span>}
+          separatorSymbol="&rsaquo;"
           activeClasses='text-blue-800 underline'
-          containerClasses='breadcrumbs flex mb-8 ml-1' 
-          listClasses='breadcrumb-wrapper'
+          navClasses='text-sm mb-8 ml-1' 
+          listWrapperClasses='block'
+          listItemClasses='inline'
+          linkClasses='hover:underline'
           capitalizeLinks={false}
       />
       <section aria-labelledby="headline-recipe" className="recipe__wrapper bg-white grid md:grid-cols-1 gap-8">
