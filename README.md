@@ -2,6 +2,8 @@
 
 ## To Do
 
+- Submitted images not working
+- Add second image capture
 - Refactor headline/header with 'Add Recipe' button
 - Can Image component handle pngs too?
 - Add a search bar
