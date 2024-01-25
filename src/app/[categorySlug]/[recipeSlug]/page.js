@@ -6,10 +6,8 @@ import Breadcrumbs from '@/components/breadcrumbs/Breadcrumbs';
 import { getRecipe } from '@/lib/recipes';
 import { capitalizeFirstLetter } from '@/lib/utils';
 
-import classes from './page.module.css';
-
 export async function generateMetadata({ params }) {
-  const recipe = getRecipe(params.recipeSlug);
+  const recipe = await getRecipe(params.recipeSlug);
 
   if (!recipe) {
     notFound();
@@ -20,8 +18,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function RecipeSlugPage({ params }) {
-  const recipe = getRecipe(params.recipeSlug);
+export default async function RecipeSlugPage({ params }) {
+  const recipe = await getRecipe(params.recipeSlug);
 
   if (!recipe) {
     notFound();

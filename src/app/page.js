@@ -9,9 +9,9 @@ export const metadata = {
   title: 'Home | Recipes',
 };
 
-export default function Home() {
+export default async function Home() {
   const categories = getCategories();
-  const recipes = getRecipes();
+  const recipes = await getRecipes();
   const recipesAscending = sortArrayOfObjAsc(recipes, 'name');
   
   return (

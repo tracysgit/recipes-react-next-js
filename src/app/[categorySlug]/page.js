@@ -16,14 +16,16 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function CategorySlugPage({ params }) {
+export default async function CategorySlugPage({ params }) {
   const category = params.categorySlug;
-  const recipes = getRecipesByCategory(category); 
+  const recipes = await getRecipesByCategory(category); 
   const recipesAscending = sortArrayOfObjAsc(recipes, 'name');
 
   return (
     <>
-      <H1Headline>{capitalizeFirstLetter(category)}</H1Headline>
+      <header>
+        <H1Headline>{capitalizeFirstLetter(category)}</H1Headline>
+      </header>
       <section
         className="deck"
         aria-labelledby={`deck__title-${category.toLowerCase()}`}
