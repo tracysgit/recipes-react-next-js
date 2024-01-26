@@ -8,7 +8,7 @@ import { capitalizeFirstLetter } from '@/lib/utils';
 export default function Breadcrumbs({ homeElement, separatorSymbol, navClasses, listWrapperClasses, listItemClasses, linkClasses, activeClasses, capitalizeLinks }) {
   const paths = usePathname();
   const pathNames = paths.split('/').filter( path => path );
-  let separator = `<span aria-hidden="true">&nbsp;${separatorSymbol}&nbsp;</span>`;
+  // let separator = `<span aria-hidden="true">&nbsp;${separatorSymbol}&nbsp;</span>`;
 
   return (
     <>

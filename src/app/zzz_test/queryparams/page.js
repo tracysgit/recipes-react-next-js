@@ -11,10 +11,10 @@ export default function QueryParamsTestPage() {
   return (
     <>
       <h1>Test Query Params page</h1>
-      {qs && <p>The 'qs' query parameter is: {qs}</p>}
-      {mac && <p>The 'mac' query parameter is: {mac}</p>}
-      {(cust_response && cust_response === 'yes') && <p>The customer response is 'SMILEY FACE'</p>}
-      {(cust_response && cust_response === 'no') && <p>The customer response is 'SAD FACE'</p>}
+      {qs && <p>The &apos;qs&apos; query parameter is: {qs}</p>}
+      {mac && <p>The &apos;mac&apos; query parameter is: {mac}</p>}
+      {(cust_response && cust_response === 'yes') && <p>The customer response is &apos;SMILEY FACE&apos;</p>}
+      {(cust_response && cust_response === 'no') && <p>The customer response is &apos;SAD FACE&apos;</p>}
       
     </>
   );

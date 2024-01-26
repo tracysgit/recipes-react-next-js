@@ -1,3 +1,7 @@
+// "use client";
+
+// import { useFormState } from 'react-dom';
+
 import H1Headline from '@/components/headlines/h1Headline';
 import ImagePicker from '@/components/form/ImagePicker';
 import RecipeAddSubmit from '@/components/form/RecipeAddSubmit';
@@ -8,6 +12,8 @@ import { submitRecipe } from '@/lib/actions';
 import classes from './page.module.css';
 
 export default function AddRecipePage() {
+  // const [state, formAction] = useFormState(submitRecipe, { message: null });
+
   const categories = getCategories();
 
   return (
@@ -19,6 +25,7 @@ export default function AddRecipePage() {
         className="recipe__add"
         aria-label="Add a recipe"
       >
+        {/* <form className={classes.form} action={formAction}> */}
         <form className={classes.form} action={submitRecipe}>
         <p>*Required information.</p>
           <div>
@@ -40,6 +47,11 @@ export default function AddRecipePage() {
             </select>
           </div>
           <div>
+            <label htmlFor="tags">Tags</label>
+            <p>Enter a list of searchable tags separated by commas.</p>
+            <input type="text" id="tags" name="tags" placeholder="oatmeal, butter, sweet" />
+          </div>
+          <div>
             <label htmlFor="servings">Servings</label>
             <input type="text" id="servings" name="servings" />
           </div>
@@ -53,7 +65,7 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="ingredients">Ingredients</label>
-            <p>Each ingredient should be on its own line (hit 'return' between ingredients).</p>
+            <p>Each ingredient should be on its own line (hit &apos;return&apos; between ingredients).</p>
             <textarea
               id="ingredients"
               name="ingredients"
@@ -62,7 +74,7 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="directions">Directions</label>
-            <p>Each paragraph should be on its own line (hit 'return' between paragraphs).</p>
+            <p>Each paragraph should be on its own line (hit &apos;return&apos; between paragraphs).</p>
             <textarea
               id="directions"
               name="directions"
@@ -71,6 +83,7 @@ export default function AddRecipePage() {
           </div>
           <ImagePicker name="image" label="Select an image of the prepared dish" compclasses="mt-4" />
           <p className={classes.actions}>
+            {/* {state.message && <p>{state.message}</p>} */}
             <RecipeAddSubmit />
             {/* <button className="inline-flex items-center px-4 py-2 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="submit">Add Recipe</button> */}
           </p>

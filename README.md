@@ -2,8 +2,13 @@
 
 ## To Do
 
+- Collect tags on Recipe Add page and in DB
 - Add all recipes
+- Uploaded image name is wrong
+- What happens if no image
 - Add second image capture
+- How to clean DB
+- Delete recipes
 - Refactor headline/header with 'Add Recipe' button
 - Can Image component handle pngs too?
 - Add a search bar

@@ -22,7 +22,7 @@ export default function Navlink({ href, as, children }) {
         <Link 
           as={as && `${as}`}
           href={href} 
-          className={`${baseClasses} ${classes.active}`}
+          className={`${baseClasses} ${classes.active} focus:ring-0 focus:ring-white`}
           aria-current="page">
             {children}
         </Link>

@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <body className="">
         <Header />        
         <div className="px-4 md:px-6 py-6 md:py-10 lg:py-12">
           <main className="maxwidth-site flex flex-col">

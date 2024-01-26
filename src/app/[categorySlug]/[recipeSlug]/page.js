@@ -31,13 +31,16 @@ export default async function RecipeSlugPage({ params }) {
   if ('directions' in recipe) {
     recipe.directions_edited = recipe.directions.replace(/\n/g, `<br /><br />`);
   }
+  if ('tags' in recipe) {
+    recipe.tags_array = (recipe.tags).split(',');
+  }
 
   return (
     <>
       <Breadcrumbs homeElement={'Home'}
           separatorSymbol="&rsaquo;"
-          activeClasses='text-blue-800 underline'
-          navClasses='text-sm mb-8 ml-1' 
+          activeClasses='text-blue-800 dark:text-white underline'
+          navClasses='text-md mb-8 ml-1' 
           listWrapperClasses='block'
           listItemClasses='inline'
           linkClasses='hover:underline'
@@ -56,15 +59,16 @@ export default async function RecipeSlugPage({ params }) {
                 ) : (
                   <>{recipe.source}</>
                 )}
-              </p>}
-            {recipe.tags && <div className="recipe__tags pt-4 md:pt-6">
-              {recipe.tags.map((tag, index) => {
+              </p>
+            }
+            {recipe.tags_array && <div className="recipe__tags pt-4 md:pt-6">
+              {recipe.tags_array.map((tag, index) => {
                 return (
                   <span
                     key={index}
                     className="mb-1 mr-2 mt-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700"
                   >
-                    #{tag}
+                    #{tag.trim()}
                   </span>
                 );
               })}
@@ -102,12 +106,12 @@ export default async function RecipeSlugPage({ params }) {
           <>
             <div className="recipe__ingredients lg:max-w-[80%]">
               <h2 className="text-2xl font-semibold mb-4">Ingredients</h2>
-              <div className="space-y-1 list-disc list-inside dark:text-gray-400">
+              <div className="space-y-1 list-disc list-inside">
                 {/* <p className="leading-8 md:columns-2" dangerouslySetInnerHTML={{__html: recipe.ingredients}}></p> */}
                 <p className="leading-8 text-lg">{parse(recipe.ingredients_edited)}</p>
               </div>
             </div>
-            <div className="recipe__directions lg:max-w-[80%] space-y-1 list-disc list-inside dark:text-gray-400">
+            <div className="recipe__directions lg:max-w-[80%] space-y-1 list-disc list-inside">
               <h2 className="text-2xl font-semibold mb-4">Directions</h2>
               {/* <p dangerouslySetInnerHTML={{__html: recipe.directions}}></p> */}
               <p className="text-lg">{parse(recipe.directions_edited)}</p>

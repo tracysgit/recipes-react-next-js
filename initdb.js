@@ -6,11 +6,7 @@ const dummyRecipes = [
     "name": "Dutch Baby",
     "name_slug": "dutch-baby",
     "category": "desserts",
-    "tags": [
-      "dessert",
-      "pancake",
-      "sweet"
-    ],
+    "tags": "dessert, pancake, sweet",
     "ingredients": "3 large eggs, at room temperature\n1/2 c. all-purpose flour\n1/2 c. whole milk, at room temperature\n1 T. sugar\nPinch of nutmeg\n4 T. unsalted butter\nConfectioner's sugar",
     "directions": "Preheat oven to 425&#8457;.\nCombine eggs, flour, milk, sugar, and nutmeg, and blend until smooth.\nPlace butter in a heavy 10-inch skillet and place in the oven. When butter has melted, add batter to the pan. Return the pan to the oven and bake for 20 minutes, until the pancake is puffed and golden. Lower oven temperature to 300&#8457; and bake five minutes longer.\nSprinkle with confectioner's sugar before serving.",
     "source": "New York Times",
@@ -27,6 +23,7 @@ db.prepare(`
       name TEXT NOT NULL,
       name_slug TEXT NOT NULL UNIQUE,
       category TEXT NOT NULL,
+      tags TEXT NOT NULL,
       ingredients TEXT NOT NULL,
       directions TEXT NOT NULL,
       source TEXT NOT NULL,
@@ -44,6 +41,7 @@ async function initData() {
         @name,
         @name_slug,
         @category,
+        @tags,
         @ingredients,
         @directions,
         @source,

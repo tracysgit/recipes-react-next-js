@@ -62,11 +62,12 @@ export async function saveRecipe(recipe) {
 
   db.prepare(`
     INSERT INTO recipes
-      (name, name_slug, category, ingredients, directions, source, source_link, servings, image, image_fullrecipe)
+      (name, name_slug, category, tags, ingredients, directions, source, source_link, servings, image, image_fullrecipe)
     VALUES (
       @name,
       @name_slug,
       @category,
+      @tags,
       @ingredients,
       @directions,
       @source,

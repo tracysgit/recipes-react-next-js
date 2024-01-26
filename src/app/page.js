@@ -31,7 +31,7 @@ export default async function Home() {
             >
               <h2
                 id={`deck__title-${category.toLowerCase()}`}
-                className="mt-2 pt-2 text-4xl text-blue-800 dark:bg-gray-800 dark:text-blue-400 font-sacramento"
+                className="mt-2 pt-2 text-4xl lg:text-5xl text-blue-800 dark:text-white font-sacramento"
               >
                 <Link href={`/${category.toLowerCase()}`} className="hover:underline">
                   {capitalizeFirstLetter(category)}

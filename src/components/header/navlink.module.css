@@ -5,3 +5,13 @@
 .navlink.active {
   border: 1px solid white;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  .navlink {
+    border: 1px solid transparent;
+  }
+
+  .navlink.active {
+    border: 1px solid white;
+  }
+} */
