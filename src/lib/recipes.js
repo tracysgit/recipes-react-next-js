@@ -46,31 +46,9 @@ export async function saveRecipe(recipe) {
   recipe.ingredients = xss(recipe.ingredients);
   recipe.directions = xss(recipe.directions);
 
-  // async function processImageFile(imageFile) {
-  //   if (imageFile.name !== 'undefined') {
-  //     const extension = imageFile.name.split().pop();
-  //     const fileName = `${recipe.category}_${extension}`;
-  
-  //     const stream = fs.createWriteStream(`public/images/${fileName}`);
-  //     const bufferedImage = await imageFile.arrayBuffer();
-  
-  //     stream.write(Buffer.from(bufferedImage), (error)=> {
-  //       if(error) {
-  //         throw new Error('Saving image failed!');
-  //       }
-  //     });
-  
-  //     imageFile = `${fileName}`; //Public/images folder is implied
-  //   } else {
-  //     imageFile = '';
-  //   }
-  // }
-
-  // processImageFile(recipe.image);
-
+  //Process recipe.image
   if (recipe.image.name !== 'undefined') {
     const extension = recipe.image.name.split().pop();
-    // const fileName = `${recipe.name_slug}.${extension}`;
     const fileName = `${recipe.category}_${extension}`;
 
     const stream = fs.createWriteStream(`public/images/${fileName}`);
@@ -85,6 +63,25 @@ export async function saveRecipe(recipe) {
     recipe.image = `${fileName}`; //Public/images folder is implied
   } else {
     recipe.image = '';
+  }
+
+  //Process recipe.image_fullrecipe
+  if (recipe.image_fullrecipe.name !== 'undefined') {
+    const extension = recipe.image_fullrecipe.name.split().pop();
+    const fileName = `recipe_${extension}`;
+
+    const stream = fs.createWriteStream(`public/images/${fileName}`);
+    const bufferedImage = await recipe.image_fullrecipe.arrayBuffer();
+
+    stream.write(Buffer.from(bufferedImage), (error)=> {
+      if(error) {
+        throw new Error('Saving image failed!');
+      }
+    });
+
+    recipe.image_fullrecipe = `${fileName}`; //Public/images folder is implied
+  } else {
+    recipe.image_fullrecipe = '';
   }
 
   db.prepare(`

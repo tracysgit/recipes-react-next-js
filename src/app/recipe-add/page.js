@@ -46,6 +46,7 @@ export default function AddRecipePage() {
               })}
             </select>
           </div>
+          <ImagePicker name="image_fullrecipe" label="Add an image of the recipe if you don't want to add details by hand." compclasses="mt-4" />
           <div>
             <label htmlFor="tags">Tags</label>
             <p>Enter a list of descriptive tags or notable ingredients separated by commas.</p>
@@ -65,7 +66,7 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="ingredients">Ingredients</label>
-            <p>Each ingredient should be on its own line (hit &apos;return&apos; between ingredients).</p>
+            <p>Each ingredient should be on its own line. Hit &apos;return&apos; between ingredients.</p>
             <textarea
               id="ingredients"
               name="ingredients"
@@ -74,14 +75,14 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="directions">Directions</label>
-            <p>Each paragraph should be on its own line (hit &apos;return&apos; between paragraphs).</p>
+            <p>Each paragraph should be on its own line. Hit &apos;return&apos; between paragraphs.</p>
             <textarea
               id="directions"
               name="directions"
               rows="10"
             ></textarea>
           </div>
-          <ImagePicker name="image" label="Select an image of the prepared dish" compclasses="mt-4" />
+          <ImagePicker name="image" label="Add an image of the prepared dish." compclasses="mt-4" />
           <p className={classes.actions}>
             {/* {state.message && <p>{state.message}</p>} */}
             <RecipeAddSubmit />

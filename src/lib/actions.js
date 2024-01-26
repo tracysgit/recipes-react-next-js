@@ -19,7 +19,7 @@ export async function submitRecipe(formData) {
     source_link: formData.get('source_link'),
     servings: formData.get('servings'),
     image: formData.get('image'),
-    image_fullrecipe: '',
+    image_fullrecipe: formData.get('image_fullrecipe')
   };
 
   console.log("---> recipe",recipe);

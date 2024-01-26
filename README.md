@@ -2,18 +2,9 @@
 
 ## To Do
 
-- Collect tags on Recipe Add page and in DB
-- Add all recipes
-- Uploaded image name is wrong
-- What happens if no image
-- Add second image capture
-- How to clean DB
-- Delete recipes
-- Refactor headline/header with 'Add Recipe' button
-- Can Image component handle pngs too?
+- How to clean DB and delete recipes
 - Add a search bar
 - Render Home page recipes as cards or list
-- Make recipes editable
 - Add print, back, and share buttons
 - Make navigation hamburger accessible
 - Add typescript
@@ -34,3 +25,4 @@
 - Slugify & XSS: "npm install slugify xss"
 - HTML Parser: npm install html-react-parser --save
 - DB: "npm install better-sqlite3", start with initdb.js in root folder, then "node initdb.js"
+- To clear the DB, remove the recipes.db file, and run "node initdb.js" to create a new DB.
