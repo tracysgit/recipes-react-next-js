@@ -31,7 +31,7 @@ export default async function RecipeSlugPage({ params }) {
   if ('directions' in recipe) {
     recipe.directions_edited = recipe.directions.replace(/\n/g, `<br /><br />`);
   }
-  if ('tags' in recipe) {
+  if ('tags' in recipe && recipe.tags !== '') {
     recipe.tags_array = (recipe.tags).split(',');
   }
 
@@ -89,7 +89,7 @@ export default async function RecipeSlugPage({ params }) {
         {recipe['image_fullrecipe'] ? (
           <div className="recipe__directions">
             <Image
-              src={`/images/${recipe['image_fullrecipe']}.jpg`}
+              src={`/images/${recipe['image_fullrecipe']}`}
               width={400}
               height={400}
               className="w-auto h-auto mx-auto"

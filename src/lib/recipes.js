@@ -47,7 +47,8 @@ export async function saveRecipe(recipe) {
   recipe.directions = xss(recipe.directions);
 
   const extension = recipe.image.name.split().pop();
-  const fileName = `${recipe.name_slug}.${extension}`;
+  // const fileName = `${recipe.name_slug}.${extension}`;
+  const fileName = `${recipe.category}_${extension}`;
 
   const stream = fs.createWriteStream(`public/images/${fileName}`);
   const bufferedImage = await recipe.image.arrayBuffer();

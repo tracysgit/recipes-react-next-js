@@ -48,8 +48,8 @@ export default function AddRecipePage() {
           </div>
           <div>
             <label htmlFor="tags">Tags</label>
-            <p>Enter a list of searchable tags separated by commas.</p>
-            <input type="text" id="tags" name="tags" placeholder="oatmeal, butter, sweet" />
+            <p>Enter a list of descriptive tags or notable ingredients separated by commas.</p>
+            <input type="text" id="tags" name="tags" placeholder="savory, flaky, butter" />
           </div>
           <div>
             <label htmlFor="servings">Servings</label>

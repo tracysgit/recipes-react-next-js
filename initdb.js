@@ -14,6 +14,19 @@ const dummyRecipes = [
     "servings": "3 to 4",
     "image": "dessert_dutch-baby.webp",
     "image_fullrecipe": ""
+  },
+  {
+    "name": "Chicken Marsala",
+    "name_slug": "chicken-marsala",
+    "category": "entrees",
+    "tags": "chicken, mushrooms",
+    "ingredients": "",
+    "directions": "",
+    "source": "",
+    "source_link": "",
+    "servings": "4",
+    "image": "entree_chicken-marsala.webp",
+    "image_fullrecipe": "recipe_chicken-marsala.webp"
   }
 ];
 
