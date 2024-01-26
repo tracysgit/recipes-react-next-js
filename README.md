@@ -2,7 +2,7 @@
 
 ## To Do
 
-- How to clean DB and delete recipes
+- Enlist server DB and enable 'Add Recipe' button
 - Add a search bar
 - Render Home page recipes as cards or list
 - Add print, back, and share buttons

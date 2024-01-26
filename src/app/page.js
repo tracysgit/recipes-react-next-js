@@ -7,7 +7,7 @@ import { getCategories, getRecipes } from '@/lib/recipes';
 import { capitalizeFirstLetter, sortArrayOfObjAsc } from '@/lib/utils';
 
 export const metadata = {
-  title: 'Home | Recipes2',
+  title: 'Home | Recipes',
 };
 
 export default async function Home() {
