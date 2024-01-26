@@ -1,10 +1,10 @@
 import fs from 'node:fs';
-import sql from 'better-sqlite3';
+// import sql from 'better-sqlite3';
 import slugify from 'slugify';
 import xss from 'xss';
 import data from '@/json/data.json';
 
-const db = sql('recipes.db');
+// const db = sql('recipes.db');
 
 export function getCategories() {
   return data.categories;
@@ -84,21 +84,21 @@ export async function saveRecipe(recipe) {
     recipe.image_fullrecipe = '';
   }
 
-  db.prepare(`
-    INSERT INTO recipes
-      (name, name_slug, category, tags, ingredients, directions, source, source_link, servings, image, image_fullrecipe)
-    VALUES (
-      @name,
-      @name_slug,
-      @category,
-      @tags,
-      @ingredients,
-      @directions,
-      @source,
-      @source_link,
-      @servings,
-      @image,
-      @image_fullrecipe
-    )
-  `).run(recipe);
+  // db.prepare(`
+  //   INSERT INTO recipes
+  //     (name, name_slug, category, tags, ingredients, directions, source, source_link, servings, image, image_fullrecipe)
+  //   VALUES (
+  //     @name,
+  //     @name_slug,
+  //     @category,
+  //     @tags,
+  //     @ingredients,
+  //     @directions,
+  //     @source,
+  //     @source_link,
+  //     @servings,
+  //     @image,
+  //     @image_fullrecipe
+  //   )
+  // `).run(recipe);
 }
