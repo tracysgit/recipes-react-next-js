@@ -26,3 +26,4 @@
 - HTML Parser: npm install html-react-parser --save
 - DB: "npm install better-sqlite3", start with initdb.js in root folder, then "node initdb.js"
 - To clear the DB, remove the recipes.db file, and run "node initdb.js" to create a new DB.
+- Image optimization: "npm i sharp"
